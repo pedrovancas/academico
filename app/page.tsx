@@ -1,9 +1,11 @@
 import Biografia from "@/components/Biografia";
+import GridCards from "@/components/GridCards";
 
 export default function Home() {
   return (
     <section className="md:mt-8 lg:mt-10 pt-8 pb-16">
       <Biografia />
+      <GridCards />
 
       {/* Seção da Citação Atualizada */}
       <blockquote className="mt-12 p-4 border-l-4 border-zinc-300 dark:border-zinc-700">

@@ -14,7 +14,7 @@ const info = {
   name: "Pedro de Castro",
   description: "Historiador; explorando as conexões entre cultura material, migração e identidade no Japão Meiji e no Brasil.",
   url: "https://pedrocas.vercel.app", 
-  image: "/meta/meta.png",
+  image: "/api/og",
 };
 
 export const metadata: Metadata = {
