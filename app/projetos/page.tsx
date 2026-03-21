@@ -37,6 +37,7 @@ const ProjetosPage = () => {
                 <div className="my-2">
                   <Tag>2026 – Atual</Tag>
                   <Tag>Situação: Em andamento</Tag>
+                  <Tag>Mestrado stricto sensu em História Social</Tag>
                 </div>
                 <dl className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1 mb-3">
                   <div><dt className="inline font-medium">Instituição: </dt><dd className="inline">PPGHS-FFLCH/USP</dd></div>
@@ -59,6 +60,15 @@ const ProjetosPage = () => {
                   Análise e catalogação da produção cerâmica da família Kojima, imigrantes japoneses do período Pós-Guerra estabelecidos na Grande São Paulo. A pesquisa debruçou-se sobre a coleção de artefatos da família sob a guarda do Museu Paulista da USP e constitui a base empírica do projeto de mestrado em desenvolvimento.
                 </p>
               </div>
+
+              {/* IC — antecedente empírico, vinculada à família de pesquisas sobre o Oriente */}
+              <div>
+                <h3 className="text-lg font-semibold">Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa</h3>
+                <div className="my-2"><Tag>2022 – 2024</Tag><Tag>Situação: Concluído</Tag></div>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  Iniciação Científica que visou mapear e analisar as representações do Egito Antigo nos mangás japoneses, baseada no interesse crescente da disciplina por estudos de recepção fora da Europa.
+                </p>
+              </div>
             </div>
           </article>
           
@@ -70,6 +80,7 @@ const ProjetosPage = () => {
             <div className="space-y-6 pl-4">
               <div>
                 <h3 className="text-lg font-semibold">GEMA (Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades)</h3>
+                <div className="my-2"><Tag>2025 – Atual</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Pesquisador vinculado ao grupo da USP/Museu Paulista.
                 </p>
@@ -97,13 +108,6 @@ const ProjetosPage = () => {
               Projetos anteriores e divulgação científica
             </h2>
             <div className="space-y-6 pl-4">
-              <div>
-                <h3 className="text-lg font-semibold">Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa</h3>
-                <div className="my-2"><Tag>2022 – 2024</Tag><Tag>Situação: Concluído</Tag></div>
-                <p className="text-zinc-700 dark:text-zinc-300">
-                  Iniciação Científica que visou mapear e analisar as representações do Egito Antigo nos mangás japoneses, baseada no interesse crescente da disciplina por estudos de recepção fora da Europa.
-                </p>
-              </div>
                <div>
                 <h3 className="text-lg font-semibold">
                   <Link href="/projetos/historiae" className="hover:opacity-60 transition-opacity">
@@ -114,6 +118,16 @@ const ProjetosPage = () => {
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Podcast de divulgação histórica com enfoque em História Pública. A produção técnica inclui planejamento, roteirização, edição e divulgação de temas históricos com base em bibliografia especializada para o público geral.
                 </p>
+                <div className="mt-1">
+                  <a
+                    href="https://open.spotify.com/show/3TCZvfeu66ZUDczxvF3PS0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
+                  >
+                    Ouvir no Spotify ↗
+                  </a>
+                </div>
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Being Egyptian</h3>
@@ -121,6 +135,16 @@ const ProjetosPage = () => {
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Organização e edição de material para divulgação científica em História do Antigo Egito. O projeto foi organizado pela Egypt Exploration Society (EES).
                 </p>
+                <div className="mt-1">
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLkfdTU5bBwmPUADek4joJpLfjpBRTBw3t"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
+                  >
+                    Ver playlist ↗
+                  </a>
+                </div>
               </div>
             </div>
           </article>

@@ -62,19 +62,49 @@ const ProducaoAcademicaPage = () => {
                 <p className="text-zinc-700 dark:text-zinc-300">
                   CASTRO, Pedro Vinícius de. <em>Revista África</em>. CEA-USP, 2024.
                 </p>
-                <div className="mt-1"><Tag>Editoração/Periódico</Tag></div>
+                <div className="mt-1">
+                  <Tag>Editoração/Periódico</Tag>
+                  <a
+                    href="https://revistas.usp.br/africa/pt_BR/issue/view/13308"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
+                  >
+                    Ver edição ↗
+                  </a>
+                </div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   CASTRO, Pedro Vinícius de. Edição audiovisual do projeto <em>Being Egyptian — The Egyptian House</em>. Egypt Exploration Society, 2023.
                 </p>
-                <div className="mt-1"><Tag>Editoração audiovisual</Tag></div>
+                <div className="mt-1">
+                  <Tag>Editoração audiovisual</Tag>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLkfdTU5bBwmPUADek4joJpLfjpBRTBw3t"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
+                  >
+                    Ver playlist ↗
+                  </a>
+                </div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   CASTRO, Pedro Vinícius de. <em>Historiae</em>: podcast de divulgação em história pública. 2022.
                 </p>
-                <div className="mt-1"><Tag>Podcast</Tag></div>
+                <div className="mt-1">
+                  <Tag>Podcast</Tag>
+                  <a
+                    href="https://open.spotify.com/show/3TCZvfeu66ZUDczxvF3PS0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
+                  >
+                    Ouvir no Spotify ↗
+                  </a>
+                </div>
               </li>
             </ul>
           </article>
