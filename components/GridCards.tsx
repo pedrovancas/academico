@@ -18,7 +18,7 @@ const cardsData = [
     title: "Divulgação científica",
     description: "Minhas participações em podcasts e outras iniciativas de História Pública.",
     href: "/#",
-    imgSrc: "/images/card-divulgacao.jpg", // <-- Este já estava correto
+    imgSrc: "/images/card-benjamin.jpg",
   },
 ];
 
