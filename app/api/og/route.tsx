@@ -5,7 +5,7 @@ export const runtime = "edge";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
-  const postTitle = searchParams.get("title");
+  const postTitle = searchParams.get("title") ?? "Pedro Vinícius de Castro";
   const font = fetch(
     new URL("../../../public/fonts/kaisei-tokumin-bold.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
         flexDirection: "column",
         alignItems: "flex-start",
         justifyContent: "center",
-        backgroundImage: "url(https://beta.vimfn.in/meta/og.png)",
+        backgroundImage: "url(https://pedrocas.vercel.app/images/gradient.webp)",
       }}
     >
       <div
@@ -41,8 +41,8 @@ export async function GET(req: NextRequest) {
       </div>
     </div>,
     {
-      width: 1920,
-      height: 1080,
+      width: 1200,
+      height: 630,
       fonts: [
         {
           name: "Kaisei Tokumin",
