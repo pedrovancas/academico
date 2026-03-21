@@ -3,7 +3,7 @@ import InfoCard from "./InfoCard";
 // As informações com as extensões EXATAS das suas imagens
 const cardsData = [
   {
-    title: "Publicações",
+    title: "Produção acadêmica",
     description: "Artigos, capítulos de livros e trabalhos apresentados em eventos acadêmicos.",
     href: "/publicacoes",
     imgSrc: "/images/ard-publicacoes.gif", // <-- CORRIGIDO para .jpg

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Projetos",
@@ -84,7 +85,11 @@ const ProjetosPage = () => {
                 </p>
               </div>
                <div>
-                <h3 className="text-lg font-semibold">Historiae: podcast de divulgação em história pública</h3>
+                <h3 className="text-lg font-semibold">
+                  <Link href="/projetos/historiae" className="hover:opacity-60 transition-opacity">
+                    Historiae: podcast de divulgação em história pública
+                  </Link>
+                </h3>
                 <div className="my-2"><Tag>2022</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Podcast de divulgação histórica com enfoque em História Pública. A produção técnica inclui planejamento, roteirização, edição e divulgação de temas históricos com base em bibliografia especializada para o público geral.
