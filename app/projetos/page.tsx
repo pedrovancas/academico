@@ -27,7 +27,7 @@ const ProjetosPage = () => {
           {/* Seção 1: Pesquisa Atual */}
           <article>
             <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
-              Projeto de Pesquisa Atual
+              Projeto de pesquisa atual
             </h2>
             <div className="pl-4">
               <h3 className="text-lg font-semibold">Pesquisa e catalogação da coleção cerâmica da familia Kojima</h3>
@@ -44,7 +44,7 @@ const ProjetosPage = () => {
           {/* Seção 2: Grupos de Pesquisa */}
           <article>
             <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
-              Grupos e Laboratórios de Pesquisa
+              Grupos e laboratórios de pesquisa
             </h2>
             <div className="space-y-6 pl-4">
               <div>
@@ -73,7 +73,7 @@ const ProjetosPage = () => {
           {/* Seção 3: Projetos Anteriores e Divulgação */}
           <article>
             <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
-              Projetos Anteriores e Divulgação Científica
+              Projetos anteriores e divulgação científica
             </h2>
             <div className="space-y-6 pl-4">
               <div>
@@ -84,7 +84,7 @@ const ProjetosPage = () => {
                 </p>
               </div>
                <div>
-                <h3 className="text-lg font-semibold">Historiae: Podcast de Divulgação em História Pública</h3>
+                <h3 className="text-lg font-semibold">Historiae: podcast de divulgação em história pública</h3>
                 <div className="my-2"><Tag>2022</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Podcast de divulgação histórica com enfoque em História Pública. A produção técnica inclui planejamento, roteirização, edição e divulgação de temas históricos com base em bibliografia especializada para o público geral.
