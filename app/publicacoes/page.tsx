@@ -31,13 +31,45 @@ const ProducaoAcademicaPage = () => {
             <ul className="space-y-4 pl-4">
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. Capítulo de livro. {/* substituir pelo capítulo de livro */}
+                  CASTRO, Pedro Vinícius de. &ldquo;O mangá que virou espelho: como Vinland Saga ressignifica a Idade Média europeia para refletir sobre o Japão&rdquo;. In: CRISTINA, Maria; DALLAQUA, Matheus; SILVA, Pedro de Oliveira e; COGHETTO, Vitor Eduardo; LOPES, Ana Vitória (orgs.). <em>Medievalismos em imagens e outras mídias</em>. São Paulo: FFLCH/USP, 2026. (Coleção Primeiros olhares). (no prelo)
+                </p>
+              </li>
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito na cultura pop japonesa&rdquo;. In: <em>Arquivos e Coleções na Antiguidade Oriental: História e Possibilidades Teórico-Metodológicas. III Colóquio Internacional do Antigo Egito e Oriente Próximo</em>. São Paulo: USP, 2023.
                 </p>
               </li>
             </ul>
           </article>
 
-          {/* Seção 2: Apresentações de trabalho */}
+          {/* Seção 2: Produção técnica */}
+          <article>
+            <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
+              Produção técnica
+            </h2>
+            <ul className="space-y-5 pl-4">
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  CASTRO, Pedro Vinícius de. <em>Revista África</em>. CEA-USP, 2024.
+                </p>
+                <div className="mt-1"><Tag>Editoração/Periódico</Tag></div>
+              </li>
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  CASTRO, Pedro Vinícius de. Edição audiovisual do projeto <em>Being Egyptian — The Egyptian House</em>. Egypt Exploration Society, 2023.
+                </p>
+                <div className="mt-1"><Tag>Editoração audiovisual</Tag></div>
+              </li>
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  CASTRO, Pedro Vinícius de. <em>Historiae</em>: podcast de divulgação em história pública. 2022.
+                </p>
+                <div className="mt-1"><Tag>Podcast</Tag></div>
+              </li>
+            </ul>
+          </article>
+
+          {/* Seção 3: Apresentações de trabalho */}
           <article>
             <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
               Apresentações de trabalho
@@ -66,33 +98,6 @@ const ProducaoAcademicaPage = () => {
                   CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa&rdquo;. 2022.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Seminário</Tag></div>
-              </li>
-            </ul>
-          </article>
-
-          {/* Seção 3: Produção técnica */}
-          <article>
-            <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
-              Produção técnica
-            </h2>
-            <ul className="space-y-5 pl-4">
-              <li>
-                <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. <em>Revista África</em>. CEA-USP, 2024.
-                </p>
-                <div className="mt-1"><Tag>Editoração/Periódico</Tag></div>
-              </li>
-              <li>
-                <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. Edição audiovisual do projeto <em>Being Egyptian — The Egyptian House</em>. Egypt Exploration Society, 2023.
-                </p>
-                <div className="mt-1"><Tag>Editoração audiovisual</Tag></div>
-              </li>
-              <li>
-                <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. <em>Historiae</em>: podcast de divulgação em história pública. 2022.
-                </p>
-                <div className="mt-1"><Tag>Podcast</Tag></div>
               </li>
             </ul>
           </article>

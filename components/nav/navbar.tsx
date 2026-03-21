@@ -15,6 +15,7 @@ const navItems: navItems = [
   { name: "Projetos", href: "/projetos" },
   { name: "Produção acadêmica", href: "/publicacoes" },
   { name: "Formulário", href: "/docs" },
+  { name: "Historiae", href: "/projetos/historiae" },
 ];
 
 const NavBar = () => {
