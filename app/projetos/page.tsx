@@ -96,7 +96,7 @@ const ProjetosPage = () => {
                 <h3 className="text-lg font-semibold">Laboratório do Antigo Oriente Próximo (LAOP)</h3>
                 <div className="my-2"><Tag>2022 – 2025</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  Núcleo interdisciplinar vinculado ao Departamento de História da USP, com o objetivo de promover atividades acadêmicas que fortaleçam a pesquisa sobre o Antigo Oriente Próximo.
+                  Participação vinculada à pesquisa de Iniciação Científica sobre as representações do Egito Antigo na cultura pop japonesa — primeiro contato sistemático com questões de recepção, mediação cultural e ressignificação de objetos e imagens em contextos extra-ocidentais. A experiência no laboratório orientou o interesse pela cultura material e pelos processos de apropriação cultural que, deslocados para o campo da imigração japonesa no Brasil, constituem o núcleo da pesquisa de mestrado em desenvolvimento.
                 </p>
               </div>
             </div>
@@ -118,33 +118,17 @@ const ProjetosPage = () => {
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Podcast de divulgação histórica com enfoque em História Pública. A produção técnica inclui planejamento, roteirização, edição e divulgação de temas históricos com base em bibliografia especializada para o público geral.
                 </p>
-                <div className="mt-1">
-                  <a
-                    href="https://open.spotify.com/show/3TCZvfeu66ZUDczxvF3PS0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
-                  >
-                    Ouvir no Spotify ↗
-                  </a>
-                </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold">Being Egyptian</h3>
+                <h3 className="text-lg font-semibold">
+                  <a href="https://www.youtube.com/playlist?list=PLkfdTU5bBwmPUADek4joJpLfjpBRTBw3t" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
+                    Being Egyptian
+                  </a>
+                </h3>
                 <div className="my-2"><Tag>2022 – 2023</Tag><Tag>Situação: Concluído</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Organização e edição de material para divulgação científica em História do Antigo Egito. O projeto foi organizado pela Egypt Exploration Society (EES).
                 </p>
-                <div className="mt-1">
-                  <a
-                    href="https://www.youtube.com/playlist?list=PLkfdTU5bBwmPUADek4joJpLfjpBRTBw3t"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
-                  >
-                    Ver playlist ↗
-                  </a>
-                </div>
               </div>
             </div>
           </article>

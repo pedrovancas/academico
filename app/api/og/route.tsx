@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
         flexDirection: "column",
         alignItems: "flex-start",
         justifyContent: "center",
-        backgroundImage: "url(https://pedrocas.vercel.app/images/gradient.webp)",
+        backgroundImage: "linear-gradient(135deg, #1a1a2e 0%, #2d1b69 40%, #7c3a2d 100%)",
       }}
     >
       <div

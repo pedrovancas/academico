@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Produção acadêmica",
@@ -36,18 +37,8 @@ const ProducaoAcademicaPage = () => {
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito na cultura pop japonesa&rdquo;. In: <em>Arquivos e Coleções na Antiguidade Oriental: História e Possibilidades Teórico-Metodológicas. III Colóquio Internacional do Antigo Egito e Oriente Próximo</em>. São Paulo: USP, 2023.
+                  CASTRO, Pedro Vinícius de. <a href="https://laop.fflch.usp.br/resumos" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">&ldquo;Orientalismo no Oriente: representações do Egito na cultura pop japonesa&rdquo;</a>. In: <em>Arquivos e Coleções na Antiguidade Oriental: História e Possibilidades Teórico-Metodológicas. III Colóquio Internacional do Antigo Egito e Oriente Próximo</em>. São Paulo: USP, 2023.
                 </p>
-                <div className="mt-1">
-                  <a
-                    href="https://laop.fflch.usp.br/resumos"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
-                  >
-                    Ver caderno de resumos ↗
-                  </a>
-                </div>
               </li>
             </ul>
           </article>
@@ -60,50 +51,26 @@ const ProducaoAcademicaPage = () => {
             <ul className="space-y-5 pl-4">
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. <em>Revista África</em>. CEA-USP, 2024.
+                  CASTRO, Pedro Vinícius de. <a href="https://revistas.usp.br/africa/pt_BR/issue/view/13308" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity"><em>Revista África</em></a>. CEA-USP, 2024.
                 </p>
                 <div className="mt-1">
                   <Tag>Editoração/Periódico</Tag>
-                  <a
-                    href="https://revistas.usp.br/africa/pt_BR/issue/view/13308"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
-                  >
-                    Ver edição ↗
-                  </a>
                 </div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. Edição audiovisual do projeto <em>Being Egyptian — The Egyptian House</em>. Egypt Exploration Society, 2023.
+                  CASTRO, Pedro Vinícius de. <a href="https://www.youtube.com/playlist?list=PLkfdTU5bBwmPUADek4joJpLfjpBRTBw3t" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Edição audiovisual do projeto <em>Being Egyptian — The Egyptian House</em></a>. Egypt Exploration Society, 2023.
                 </p>
                 <div className="mt-1">
                   <Tag>Editoração audiovisual</Tag>
-                  <a
-                    href="https://www.youtube.com/playlist?list=PLkfdTU5bBwmPUADek4joJpLfjpBRTBw3t"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
-                  >
-                    Ver playlist ↗
-                  </a>
                 </div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. <em>Historiae</em>: podcast de divulgação em história pública. 2022.
+                  CASTRO, Pedro Vinícius de. <Link href="/projetos/historiae" className="hover:opacity-60 transition-opacity"><em>Historiae</em>: podcast de divulgação em história pública</Link>. 2022.
                 </p>
                 <div className="mt-1">
                   <Tag>Podcast</Tag>
-                  <a
-                    href="https://open.spotify.com/show/3TCZvfeu66ZUDczxvF3PS0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 transition-colors underline underline-offset-2"
-                  >
-                    Ouvir no Spotify ↗
-                  </a>
                 </div>
               </li>
             </ul>
