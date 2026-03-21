@@ -11,7 +11,7 @@ import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 const info = {
-  name: "Pedro de Castro",
+  name: "Pedro Vinícius de Castro",
   description: "Historiador; explorando as conexões entre cultura material, migração e identidade no Japão Meiji e no Brasil.",
   url: "https://pedrocas.vercel.app", 
   image: "/api/og",

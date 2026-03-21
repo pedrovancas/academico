@@ -22,8 +22,8 @@ export async function generateMetadata({
     image,
   } = post.metadata;
   const ogImage = image
-    ? `https://beta.vimfn.in/${image}`
-    : `https://beta.vimfn.in/api/og?title=${title}`;
+    ? `https://pedrocas.vercel.app/${image}`
+    : `https://pedrocas.vercel.app/api/og?title=${title}`;
 
   return {
     title,
@@ -33,7 +33,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `https://beta.vimfn.in/notes/${post.slug}`,
+      url: `https://pedrocas.vercel.app/publicacoes/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -75,12 +75,12 @@ export default async function Blog({
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `https://beta.vimfn.in${post.metadata.image}`
-              : `https://beta.vimfn.in/api/og?title=${post.metadata.title}`,
-            url: `https://beta.vimfn.in/writing/${post.slug}`,
+              ? `https://pedrocas.vercel.app${post.metadata.image}`
+              : `https://pedrocas.vercel.app/api/og?title=${post.metadata.title}`,
+            url: `https://pedrocas.vercel.app/publicacoes/${post.slug}`,
             author: {
               "@type": "Person",
-              name: "vimfn",
+              name: "Pedro Vinícius de Castro",
             },
           }),
         }}
