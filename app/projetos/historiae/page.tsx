@@ -31,8 +31,8 @@ const HistoriaePage = () => {
             Historiae: podcast de divulgação em história pública
           </h1>
           <div className="mb-4">
-            <Tag>2022</Tag>
-            <Tag>Situação: Concluído</Tag>
+            <Tag>2022 – presente</Tag>
+            <Tag>Produção intermitente — novos episódios em desenvolvimento</Tag>
           </div>
           <p className="text-zinc-600 dark:text-zinc-400">
             Podcast de divulgação histórica com enfoque em História Pública. A
@@ -45,7 +45,7 @@ const HistoriaePage = () => {
 
         <div className="space-y-6">
           <iframe
-            src="https://open.spotify.com/embed/show/3TCZvfeu66ZUDczxvF3PS0"
+            src="https://open.spotify.com/embed/show/3TCZvfeu66ZUDczxvF3PS0?utm_source=generator"
             width="100%"
             height="352"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"

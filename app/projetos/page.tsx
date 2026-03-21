@@ -30,15 +30,35 @@ const ProjetosPage = () => {
             <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
               Projeto de pesquisa atual
             </h2>
-            <div className="pl-4">
-              <h3 className="text-lg font-semibold">Pesquisa e catalogação da coleção cerâmica da familia Kojima</h3>
-              <div className="my-2">
-                <Tag>2025 – Atual</Tag>
-                <Tag>Situação: Em andamento</Tag>
+            <div className="space-y-8 pl-4">
+              {/* Projeto de mestrado — destaque principal */}
+              <div className="border border-zinc-200 dark:border-zinc-700 rounded-lg p-5">
+                <h3 className="text-lg font-semibold">Matriz Meiji: o complexo doméstico-industrial da família Kojima e a produção cerâmica nikkei em São Paulo</h3>
+                <div className="my-2">
+                  <Tag>2026 – Atual</Tag>
+                  <Tag>Situação: Em andamento</Tag>
+                </div>
+                <dl className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1 mb-3">
+                  <div><dt className="inline font-medium">Instituição: </dt><dd className="inline">PPGHS-FFLCH/USP</dd></div>
+                  <div><dt className="inline font-medium">Orientação: </dt><dd className="inline">Profa. Dra. Vânia Carneiro de Carvalho</dd></div>
+                  <div><dt className="inline font-medium">Vínculo: </dt><dd className="inline">Museu Paulista da USP / GEMA-FAU/USP</dd></div>
+                </dl>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  A investigação toma como objeto o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses estabelecidos em Mauá, SP, para analisar as interseções entre espaço doméstico, produção cerâmica e processos de enraizamento da comunidade nikkei no estado de São Paulo. O conceito operatório central, &ldquo;Matriz Meiji&rdquo;, designa o repertório de saberes técnicos, disposições corporais e arranjos espaciais transmitidos no interior do núcleo familiar e mobilizados na organização da olaria. A pesquisa articula metodologias de análise de cultura material, história oral e estudo do espaço doméstico, tendo como fontes a coleção cerâmica da família sob a guarda do Museu Paulista da USP, depoimentos de membros da família e documentação relativa à trajetória migratória e produtiva do grupo.
+                </p>
               </div>
-              <p className="text-zinc-700 dark:text-zinc-300">
-                Análise e catalogação da produção cerâmica da família Kojima, imigrantes japoneses do período Pós-Guerra estabelecidos na Grande São Paulo. A pesquisa debruça-se sobre a coleção de artefatos da família sob a guarda do Museu Paulista, servindo como base para o projeto de mestrado que analisa as adaptações, permanências e rupturas no espaço doméstico dos imigrantes japoneses.
-              </p>
+
+              {/* Pesquisa de catalogação — base empírica, concluída */}
+              <div>
+                <h3 className="text-lg font-semibold">Pesquisa e catalogação da coleção cerâmica da família Kojima</h3>
+                <div className="my-2">
+                  <Tag>2025 – 2026</Tag>
+                  <Tag>Situação: Concluído</Tag>
+                </div>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  Análise e catalogação da produção cerâmica da família Kojima, imigrantes japoneses do período Pós-Guerra estabelecidos na Grande São Paulo. A pesquisa debruçou-se sobre a coleção de artefatos da família sob a guarda do Museu Paulista da USP e constitui a base empírica do projeto de mestrado em desenvolvimento.
+                </p>
+              </div>
             </div>
           </article>
           
