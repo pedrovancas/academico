@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
         flexDirection: "column",
         alignItems: "flex-start",
         justifyContent: "center",
-        backgroundImage: "linear-gradient(135deg, #0f0c29 0%, #302b63 40%, #8B1a00 100%)",
+        backgroundImage: "linear-gradient(135deg, #c8d8f0 0%, #d4c8e8 35%, #f0c8a8 70%, #f5d5b0 100%)",
       }}
     >
       <div
@@ -32,7 +32,7 @@ export async function GET(req: NextRequest) {
           fontFamily: "Kaisei Tokumin",
           letterSpacing: "-0.05em",
           fontStyle: "normal",
-          color: "white",
+          color: "#1a1a1a",
           lineHeight: "120px",
           whiteSpace: "pre-wrap",
         }}
