@@ -165,7 +165,7 @@ const ProjetosPage = () => {
                 </h3>
                 <div className="my-2"><Tag>2022 – 2023</Tag><Tag>Situação: Concluído</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  Organização e edição de material para divulgação científica em História do Antigo Egito. O projeto foi organizado pela Egypt Exploration Society (EES).
+                  Produção e edição de material audiovisual de divulgação científica no âmbito do projeto internacional Being Egyptian, organizado pela Egypt Exploration Society (EES), instituição britânica dedicada à pesquisa do Antigo Egito desde 1882. O projeto centrou-se na investigação e comunicação pública sobre o espaço doméstico no Egito antigo, abordando a casa egípcia como lugar de práticas cotidianas, organização familiar e cultura material. O trabalho envolveu a elaboração de narrativas audiovisuais voltadas à mediação entre a pesquisa historiográfica recente e públicos ampliados. A atuação no projeto se deu em diálogo com a pesquisa de Iniciação Científica então em desenvolvimento pelo integrante, intitulada "Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa" (2022–2024), e antecipa, no plano temático, o interesse pelo espaço doméstico como objeto de análise histórica que orienta seu projeto de mestrado em curso sobre a casa e a produção cerâmica da família Kojima, imigrantes japoneses no estado de São Paulo.
                 </p>
               </div>
             </div>
