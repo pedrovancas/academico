@@ -81,7 +81,7 @@ const ProjetosPage = () => {
               <div className="flex items-start gap-4">
                 <a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 mt-1">
                   <img
-                    src="/logos/gema.jpeg"
+                    src="/logos/gema.png"
                     alt="Logo GEMA"
                     className="h-10 w-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                   />
