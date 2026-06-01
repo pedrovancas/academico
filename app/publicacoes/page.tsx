@@ -92,7 +92,7 @@ const ProducaoAcademicaPage = () => {
                   <Link href="/projetos/historiae" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. <em>Historiae</em>: podcast de divulgação em história pública. 2022.</Link>
                 </p>
                 <div className="mt-1">
-                  <Tag>Produção audiovisual/Podcast</Tag>
+                  <Tag>Editoração audiovisual/Podcast</Tag>
                 </div>
               </li>
             </ul>

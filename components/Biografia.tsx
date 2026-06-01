@@ -80,22 +80,22 @@ export default function Biografia() {
           ,{" "}
           <a
             className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
+            href="https://usp-br1.academia.edu/PedroCastro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Academia.edu
+          </a>{" "}
+          e{" "}
+          <a
+            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
             href="https://orcid.org/0009-0000-4556-3753"
             target="_blank"
             rel="noopener noreferrer"
           >
             ORCID
           </a>{" "}
-          (0009-0000-4556-3753) e{" "}
-          <a
-            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-            href="https://usp-br1.academia.edu/PedroCastro"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Academia.edu
-          </a>
-          .
+          (0009-0000-4556-3753).
         </div>
       </div>
     </>
