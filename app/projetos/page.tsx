@@ -40,9 +40,9 @@ const ProjetosPage = () => {
                   <Tag>Mestrado stricto sensu em História Social</Tag>
                 </div>
                 <dl className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1 mb-3">
-                  <div><dt className="inline font-medium">Instituição: </dt><dd className="inline">PPGHS-FFLCH/USP</dd></div>
+                  <div><dt className="inline font-medium">Instituição: </dt><dd className="inline">Programa de História Social da Faculdade de Filosofia, Letras e Ciências Humanas da Universidade de São Paulo (FFLCH/USP)</dd></div>
                   <div><dt className="inline font-medium">Orientação: </dt><dd className="inline">Profa. Dra. Vânia Carneiro de Carvalho</dd></div>
-                  <div><dt className="inline font-medium">Vínculo: </dt><dd className="inline">Museu Paulista da USP / GEMA-FAU/USP</dd></div>
+                  <div><dt className="inline font-medium">Vínculo: </dt><dd className="inline"><a href="https://www.mp.usp.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Museu Paulista (Museu do Ipiranga) da Universidade de São Paulo</a> / <a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">GEMA</a></dd></div>
                 </dl>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   A investigação toma como objeto o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses estabelecidos em Mauá, SP, para analisar as interseções entre espaço doméstico, produção cerâmica e processos de enraizamento da comunidade nikkei no estado de São Paulo. O conceito operatório central, &ldquo;Matriz Meiji&rdquo;, designa o repertório de saberes técnicos, disposições corporais e arranjos espaciais transmitidos no interior do núcleo familiar e mobilizados na organização da olaria. A pesquisa articula metodologias de análise de cultura material, história oral e estudo do espaço doméstico, tendo como fontes a coleção cerâmica da família sob a guarda do Museu Paulista da USP, depoimentos de membros da família e documentação relativa à trajetória migratória e produtiva do grupo.
