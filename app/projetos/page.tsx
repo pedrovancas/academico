@@ -66,7 +66,7 @@ const ProjetosPage = () => {
                 <h3 className="text-lg font-semibold">Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa</h3>
                 <div className="my-2"><Tag>2022 – 2024</Tag><Tag>Situação: Concluído</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  Iniciação Científica que visou mapear e analisar as representações do Egito Antigo nos mangás japoneses, baseada no interesse crescente da disciplina por estudos de recepção fora da Europa.
+                  Pesquisa dedicada ao mapeamento e à análise das representações do Egito Antigo em mangás japoneses, tomando como corpus séries que mobilizam referências à civilização egípcia em seus enredos, iconografia e construção de personagens. A investigação inscreve-se no campo dos estudos de recepção da Antiguidade, em diálogo com a historiografia recente que tem ampliado o escopo geográfico e cultural da Egiptomania para além dos circuitos europeus e norte-americanos. Ao examinar os processos de apropriação e ressignificação do passado egípcio na cultura pop japonesa, a pesquisa interroga os mecanismos de mediação editoriais, visuais e narrativos pelos quais o Egito Antigo é reconfigurado em contextos extra-ocidentais, contribuindo para a diversificação das fontes e abordagens no campo.
                 </p>
               </div>
             </div>
