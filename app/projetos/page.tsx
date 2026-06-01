@@ -90,7 +90,7 @@ const ProjetosPage = () => {
                   <h3 className="text-lg font-semibold"><a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">GEMA</a> (Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades)</h3>
                   <div className="my-2"><Tag>2025 – Atual</Tag></div>
                   <p className="text-zinc-700 dark:text-zinc-300">
-                    Pesquisador vinculado ao grupo da USP/Museu Paulista.
+                    O Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades (GEMA), coordenado pela Profa. Dra. Vânia Carneiro de Carvalho junto ao Museu Paulista da Universidade de São Paulo (Museu do Ipiranga), tem o objetivo de aprofundar discussões teórico-metodológicas ligadas às relações entre o ambiente das casas, o corpo e os artefatos com a construção e as transformações da sociedade brasileira dos séculos XIX e XX. A partir do entendimento de que as materialidades têm capacidade agenciadora no mundo social, o grupo busca compreender as trajetórias biográficas dos objetos de decoração, de moda e de trabalho doméstico, em suas interações com questões de gênero e práticas cotidianas.
                   </p>
                 </div>
               </div>
