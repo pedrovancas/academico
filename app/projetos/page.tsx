@@ -56,6 +56,11 @@ const ProjetosPage = () => {
                   <Tag>2025 – 2026</Tag>
                   <Tag>Situação: Concluído</Tag>
                 </div>
+                <dl className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1 mb-3">
+                  <div><dt className="inline font-medium">Instituição: </dt><dd className="inline">Universidade de São Paulo (USP)</dd></div>
+                  <div><dt className="inline font-medium">Orientação: </dt><dd className="inline">Profa. Dra. Vânia Carneiro de Carvalho</dd></div>
+                  <div><dt className="inline font-medium">Vínculo: </dt><dd className="inline"><a href="https://museudoipiranga.org.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Museu Paulista (Museu do Ipiranga) da Universidade de São Paulo</a> / <a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">GEMA</a></dd></div>
+                </dl>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Análise e catalogação da produção cerâmica da família Kojima, imigrantes japoneses do período Pós-Guerra estabelecidos na Grande São Paulo. A pesquisa debruçou-se sobre a coleção de artefatos da família sob a guarda do Museu Paulista da Universidade de São Paulo, compreendendo o levantamento, a classificação tipológica e o registro de metadados de 55 peças cerâmicas em planilha institucional padronizada. O trabalho de catalogação foi acompanhado de pesquisa documental e de história oral junto a membros da família, com destaque para entrevista realizada com Yasuichi Kojima (março de 2025), que permitiu a reconstituição de etapas do processo produtivo e da trajetória de instalação da olaria familiar em Mauá, SP. Os resultados constituem a base empírica para o projeto de mestrado em desenvolvimento no PPGHS-USP.
                 </p>
@@ -65,6 +70,12 @@ const ProjetosPage = () => {
               <div className="border border-zinc-200 dark:border-zinc-700 rounded-lg p-5">
                 <h3 className="text-lg font-semibold">Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa</h3>
                 <div className="my-2"><Tag>2022 – 2024</Tag><Tag>Situação: Concluído</Tag></div>
+                <dl className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1 mb-3">
+                  <div><dt className="inline font-medium">Instituição: </dt><dd className="inline">Universidade de São Paulo (USP)</dd></div>
+                  <div><dt className="inline font-medium">Departamento: </dt><dd className="inline">Departamento de História da Faculdade de Filosofia, Letras e Ciências Humanas (FFLCH/USP)</dd></div>
+                  <div><dt className="inline font-medium">Orientação: </dt><dd className="inline">Profa. Dra. Thaís Rocha</dd></div>
+                  <div><dt className="inline font-medium">Vínculo: </dt><dd className="inline"><a href="https://laop.fflch.usp.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Laboratório do Antigo Oriente Próximo (LAOP)</a></dd></div>
+                </dl>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Pesquisa dedicada ao mapeamento e à análise das representações do Egito Antigo em mangás japoneses, tomando como corpus séries que mobilizam referências à civilização egípcia em seus enredos, iconografia e construção de personagens. A investigação inscreve-se no campo dos estudos de recepção da Antiguidade, em diálogo com a historiografia recente que tem ampliado o escopo geográfico e cultural da Egiptomania para além dos circuitos europeus e norte-americanos. Ao examinar os processos de apropriação e ressignificação do passado egípcio na cultura pop japonesa, a pesquisa interroga os mecanismos de mediação editoriais, visuais e narrativos pelos quais o Egito Antigo é reconfigurado em contextos extra-ocidentais, contribuindo para a diversificação das fontes e abordagens no campo.
                 </p>
