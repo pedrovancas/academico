@@ -52,6 +52,7 @@ const ProducaoAcademicaPage = () => {
                 <p className="text-zinc-700 dark:text-zinc-300">
                   <a href="https://laop.fflch.usp.br/resumos" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. <strong>Orientalismo no Oriente: representações do Egito na cultura pop japonesa.</strong> In: Arquivos e Coleções na Antiguidade Oriental: História e Possibilidades Teórico-Metodológicas. III Colóquio Internacional do Antigo Egito e Oriente Próximo. São Paulo: USP, 2023.</a>
                 </p>
+                <div className="mt-1"><Tag>Anais de congresso</Tag></div>
               </li>
             </ul>
           </article>
