@@ -96,25 +96,25 @@ const ProducaoAcademicaPage = () => {
             <ul className="space-y-5 pl-4">
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: o Egito Antigo na cultura pop japonesa&rdquo;. <em>International Seminar Egypopcult: Reception of Antiquity in Contemporary Popular Culture</em>. 2024.
+                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: o Egito Antigo na cultura pop japonesa&rdquo;. <strong><em>International Seminar Egypopcult: Reception of Antiquity in Contemporary Popular Culture</em></strong>. 2024.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Seminário</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: gênero e Egito Antigo nos mangás&rdquo;. <em>IX Encontro de Pesquisa na Graduação em História</em>. 2024.
+                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: gênero e Egito Antigo nos mangás&rdquo;. <strong><em>IX Encontro de Pesquisa na Graduação em História</em></strong>. 2024.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Seminário</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito na cultura pop japonesa&rdquo;. <em>III Colóquio Internacional do Antigo Egito e Oriente Próximo, USP</em>. 2023.
+                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito na cultura pop japonesa&rdquo;. <strong><em>III Colóquio Internacional do Antigo Egito e Oriente Próximo, USP</em></strong>. 2023.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa&rdquo;. 2022.
+                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa&rdquo;. <strong>Laboratório de Antigo Oriente Próximo, USP</strong>. 2022.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Seminário</Tag></div>
               </li>
