@@ -38,7 +38,7 @@ const ProducaoAcademicaPage = () => {
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. <strong>A vontade de resistir está em suas mãos: neomedievalismo japonês, agência material e capitalismo tardio em Final Fantasy Tactics.</strong> Neomedieval. (sob avaliação)
+                  CASTRO, Pedro Vinícius de. <strong>&ldquo;A vontade de resistir está em suas mãos&rdquo;: neomedievalismo japonês, agência material e capitalismo tardio em Final Fantasy Tactics.</strong> Neomedieval. (sob avaliação)
                 </p>
                 <div className="mt-1"><Tag>Sob avaliação</Tag><Tag>Internacional</Tag></div>
               </li>
@@ -92,7 +92,7 @@ const ProducaoAcademicaPage = () => {
                   <Link href="/projetos/historiae" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. <em>Historiae</em>: podcast de divulgação em história pública. 2022.</Link>
                 </p>
                 <div className="mt-1">
-                  <Tag>Podcast</Tag>
+                  <Tag>Produção audiovisual/Podcast</Tag>
                 </div>
               </li>
             </ul>
