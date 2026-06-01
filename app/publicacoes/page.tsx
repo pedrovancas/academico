@@ -64,7 +64,15 @@ const ProducaoAcademicaPage = () => {
             <ul className="space-y-5 pl-4">
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  <a href="https://revistas.usp.br/africa/pt_BR/issue/view/13308" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. <em>Revista África</em>. CEA-USP, 2024.</a>
+                  <a href="https://revistas.usp.br/africa/pt_BR/issue/view/13308" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. Revista África, n. 45. CEA-USP, 2024.</a>
+                </p>
+                <div className="mt-1">
+                  <Tag>Editoração/Periódico</Tag>
+                </div>
+              </li>
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  CASTRO, Pedro Vinícius de. Revista África, n. 44. CEA-USP, 2024.
                 </p>
                 <div className="mt-1">
                   <Tag>Editoração/Periódico</Tag>
