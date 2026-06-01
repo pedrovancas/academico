@@ -50,7 +50,7 @@ const ProjetosPage = () => {
               </div>
 
               {/* Pesquisa de catalogação — base empírica, concluída */}
-              <div>
+              <div className="border border-zinc-200 dark:border-zinc-700 rounded-lg p-5">
                 <h3 className="text-lg font-semibold">Pesquisa e catalogação da coleção cerâmica da família Kojima</h3>
                 <div className="my-2">
                   <Tag>2025 – 2026</Tag>
@@ -62,7 +62,7 @@ const ProjetosPage = () => {
               </div>
 
               {/* IC — antecedente empírico, vinculada à família de pesquisas sobre o Oriente */}
-              <div>
+              <div className="border border-zinc-200 dark:border-zinc-700 rounded-lg p-5">
                 <h3 className="text-lg font-semibold">Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa</h3>
                 <div className="my-2"><Tag>2022 – 2024</Tag><Tag>Situação: Concluído</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
