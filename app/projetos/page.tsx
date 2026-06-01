@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -79,21 +80,36 @@ const ProjetosPage = () => {
             </h2>
             <div className="space-y-6 pl-4">
               <div>
-                <h3 className="text-lg font-semibold"><a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">GEMA</a> (Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades)</h3>
+                <div className="flex items-center gap-4 mb-2">
+                  <a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer">
+                    <Image src="/images/logo-gema.png" alt="Logo GEMA" width={60} height={60} className="object-contain" />
+                  </a>
+                  <h3 className="text-lg font-semibold"><a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">GEMA</a> (Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades)</h3>
+                </div>
                 <div className="my-2"><Tag>2025 – Atual</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Pesquisador vinculado ao grupo da USP/Museu Paulista.
                 </p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold"><a href="https://nejap.paginas.ufsc.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">NEJAP</a> (Núcleo de Estudos Japoneses)</h3>
-                 <div className="my-2"><Tag>2024 – Atual</Tag></div>
+                <div className="flex items-center gap-4 mb-2">
+                  <a href="https://nejap.paginas.ufsc.br" target="_blank" rel="noopener noreferrer">
+                    <Image src="/images/logo-nejap.png" alt="Logo NEJAP" width={60} height={60} className="object-contain" />
+                  </a>
+                  <h3 className="text-lg font-semibold"><a href="https://nejap.paginas.ufsc.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">NEJAP</a> (Núcleo de Estudos Japoneses)</h3>
+                </div>
+                <div className="my-2"><Tag>2024 – Atual</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Grupo de pesquisa e extensão da UFSC dedicado aos estudos japoneses e asiáticos, com foco em história, literatura, artes e cultura do Japão.
                 </p>
               </div>
-               <div>
-                <h3 className="text-lg font-semibold">Laboratório do Antigo Oriente Próximo (<a href="https://laop.fflch.usp.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">LAOP</a>)</h3>
+              <div>
+                <div className="flex items-center gap-4 mb-2">
+                  <a href="https://laop.fflch.usp.br" target="_blank" rel="noopener noreferrer">
+                    <Image src="/images/logo-laop.png" alt="Logo LAOP" width={60} height={60} className="object-contain" />
+                  </a>
+                  <h3 className="text-lg font-semibold">Laboratório do Antigo Oriente Próximo (<a href="https://laop.fflch.usp.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">LAOP</a>)</h3>
+                </div>
                 <div className="my-2"><Tag>2022 – 2025</Tag></div>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   Participação vinculada à pesquisa de Iniciação Científica sobre as representações do Egito Antigo na cultura pop japonesa — primeiro contato sistemático com questões de recepção, mediação cultural e ressignificação de objetos e imagens em contextos extra-ocidentais. A experiência no laboratório orientou o interesse pela cultura material e pelos processos de apropriação cultural que, deslocados para o campo da imigração japonesa no Brasil, constituem o núcleo da pesquisa de mestrado em desenvolvimento.
