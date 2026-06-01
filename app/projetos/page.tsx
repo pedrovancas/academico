@@ -122,7 +122,7 @@ const ProjetosPage = () => {
                   <h3 className="text-lg font-semibold">Laboratório do Antigo Oriente Próximo (<a href="https://laop.fflch.usp.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">LAOP</a>)</h3>
                   <div className="my-2"><Tag>2022 – 2025</Tag></div>
                   <p className="text-zinc-700 dark:text-zinc-300">
-                    Participação vinculada à pesquisa de Iniciação Científica sobre as representações do Egito Antigo na cultura pop japonesa — primeiro contato sistemático com questões de recepção, mediação cultural e ressignificação de objetos e imagens em contextos extra-ocidentais. A experiência no laboratório orientou o interesse pela cultura material e pelos processos de apropriação cultural que, deslocados para o campo da imigração japonesa no Brasil, constituem o núcleo da pesquisa de mestrado em desenvolvimento.
+                    Atuação como integrante do Laboratório do Antigo Oriente Próximo (LAOP-USP), núcleo interdisciplinar vinculado ao Departamento de História da Universidade de São Paulo dedicado ao estudo das sociedades antigas da Mesopotâmia, Egito, Anatólia e região Siro-Palestina. A participação no laboratório esteve vinculada à pesquisa de Iniciação Científica sobre as representações do Egito Antigo na cultura pop japonesa e incluiu a contribuição para a organização do III Colóquio Internacional do Antigo Egito e Oriente Próximo (USP, 2023), bem como a participação em seminários de Egiptologia e eventos do grupo.
                   </p>
                 </div>
               </div>
