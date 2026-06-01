@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const Tag = ({ children }: { children: React.ReactNode }) => (
-  <span className="inline-block bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 rounded-full px-2 py-0.5 text-xs font-medium">
+  <span className="inline-block bg-white/20 text-white border border-white/30 rounded-full px-2 py-0.5 text-xs font-medium backdrop-blur-sm">
     {children}
   </span>
 );
@@ -48,23 +48,22 @@ export default function PublicacoesHome() {
           <Link
             key={pub.title}
             href={pub.href}
-            className="group flex flex-col border border-zinc-200 dark:border-zinc-700 rounded-lg overflow-hidden hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
+            className="group relative h-64 rounded-lg overflow-hidden"
           >
-            <div className="h-40 overflow-hidden bg-zinc-100 dark:bg-zinc-800">
-              <img
-                src={pub.imgSrc}
-                alt={pub.title}
-                className={`w-full h-full object-cover ${pub.imgPosition} group-hover:scale-105 transition-transform duration-300`}
-              />
-            </div>
-            <div className="p-4 flex flex-col gap-2 flex-1">
-              <p className="text-sm font-semibold leading-snug line-clamp-3 text-zinc-800 dark:text-zinc-100">
+            <img
+              src={pub.imgSrc}
+              alt={pub.title}
+              className={`absolute inset-0 w-full h-full object-cover ${pub.imgPosition} group-hover:scale-105 transition-transform duration-500`}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 flex flex-col gap-2">
+              <p className="text-sm font-semibold leading-snug line-clamp-3 text-white">
                 {pub.title}
               </p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400 line-clamp-2 mt-auto">
+              <p className="text-xs text-zinc-300 line-clamp-1">
                 {pub.venue}
               </p>
-              <div className="mt-1">
+              <div>
                 <Tag>{pub.status}</Tag>
               </div>
             </div>
