@@ -38,7 +38,7 @@ const ProducaoAcademicaPage = () => {
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. <strong>&ldquo;A vontade de resistir está em suas mãos&rdquo;: neomedievalismo japonês, agência material e capitalismo tardio em Final Fantasy Tactics.</strong> Neomedieval. (sob avaliação)
+                  CASTRO, Pedro Vinícius de. <strong>&ldquo;A vontade de resistir está em suas mãos&rdquo;: neomedievalismo japonês, agência material e capitalismo tardio em Final Fantasy Tactics.</strong> Neomedieval. Madri: Universidad Rey Juan Carlos. (sob avaliação)
                 </p>
                 <div className="mt-1"><Tag>Sob avaliação</Tag><Tag>Internacional</Tag></div>
               </li>
