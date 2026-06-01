@@ -57,7 +57,7 @@ const ProjetosPage = () => {
                   <Tag>Situação: Concluído</Tag>
                 </div>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  Análise e catalogação da produção cerâmica da família Kojima, imigrantes japoneses do período Pós-Guerra estabelecidos na Grande São Paulo. A pesquisa debruçou-se sobre a coleção de artefatos da família sob a guarda do Museu Paulista da USP e constitui a base empírica do projeto de mestrado em desenvolvimento.
+                  Análise e catalogação da produção cerâmica da família Kojima, imigrantes japoneses do período Pós-Guerra estabelecidos na Grande São Paulo. A pesquisa debruçou-se sobre a coleção de artefatos da família sob a guarda do Museu Paulista da Universidade de São Paulo, compreendendo o levantamento, a classificação tipológica e o registro de metadados de 55 peças cerâmicas em planilha institucional padronizada. O trabalho de catalogação foi acompanhado de pesquisa documental e de história oral junto a membros da família, com destaque para entrevista realizada com Yasuichi Kojima (março de 2025), que permitiu a reconstituição de etapas do processo produtivo e da trajetória de instalação da olaria familiar em Mauá, SP. Os resultados constituem a base empírica para o projeto de mestrado em desenvolvimento no PPGHS-USP.
                 </p>
               </div>
 
