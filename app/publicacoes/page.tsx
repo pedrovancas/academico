@@ -32,25 +32,25 @@ const ProducaoAcademicaPage = () => {
             <ul className="space-y-4 pl-4">
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. Hatshepsut, a faraó fabricada: agência dos artefatos, tecnologias de gênero e orientalismo deslocado no mangá <em>Aoi Horus no Hitomi</em> (碧いホルスの瞳). <em>Revista do Museu de Arqueologia e Etnologia</em>. São Paulo: MAE-USP. (sob avaliação)
+                  CASTRO, Pedro Vinícius de. <strong>Hatshepsut, a faraó fabricada: agência dos artefatos, tecnologias de gênero e orientalismo deslocado no mangá Aoi Horus no Hitomi (碧いホルスの瞳).</strong> Revista do Museu de Arqueologia e Etnologia. São Paulo: MAE-USP. (sob avaliação)
                 </p>
                 <div className="mt-1"><Tag>Sob avaliação</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. A vontade de resistir está em suas mãos: neomedievalismo japonês, agência material e capitalismo tardio em <em>Final Fantasy Tactics</em>. <em>Neomedieval</em>. (sob avaliação)
+                  CASTRO, Pedro Vinícius de. <strong>A vontade de resistir está em suas mãos: neomedievalismo japonês, agência material e capitalismo tardio em Final Fantasy Tactics.</strong> Neomedieval. (sob avaliação)
                 </p>
                 <div className="mt-1"><Tag>Sob avaliação</Tag><Tag>Internacional</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. O mangá que virou espelho: como Vinland Saga ressignifica a Idade Média europeia para refletir sobre o Japão. In: CRISTINA, Maria; DALLAQUA, Matheus; SILVA, Pedro de Oliveira e; COGHETTO, Vitor Eduardo; LOPES, Ana Vitória (orgs.). <em>Medievalismos em imagens e outras mídias</em>. São Paulo: FFLCH/USP, 2026. (Coleção Primeiros olhares). (no prelo)
+                  CASTRO, Pedro Vinícius de. <strong>O mangá que virou espelho: como Vinland Saga ressignifica a Idade Média europeia para refletir sobre o Japão.</strong> In: CRISTINA, Maria; DALLAQUA, Matheus; SILVA, Pedro de Oliveira e; COGHETTO, Vitor Eduardo; LOPES, Ana Vitória (orgs.). Medievalismos em imagens e outras mídias. São Paulo: FFLCH/USP, 2026. (Coleção Primeiros olhares). (no prelo)
                 </p>
                 <div className="mt-1"><Tag>Aceito / No prelo</Tag><Tag>Capítulo de livro</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  <a href="https://laop.fflch.usp.br/resumos" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. Orientalismo no Oriente: representações do Egito na cultura pop japonesa. In: <em>Arquivos e Coleções na Antiguidade Oriental: História e Possibilidades Teórico-Metodológicas. III Colóquio Internacional do Antigo Egito e Oriente Próximo</em>. São Paulo: USP, 2023.</a>
+                  <a href="https://laop.fflch.usp.br/resumos" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. <strong>Orientalismo no Oriente: representações do Egito na cultura pop japonesa.</strong> In: Arquivos e Coleções na Antiguidade Oriental: História e Possibilidades Teórico-Metodológicas. III Colóquio Internacional do Antigo Egito e Oriente Próximo. São Paulo: USP, 2023.</a>
                 </p>
               </li>
             </ul>
@@ -97,25 +97,25 @@ const ProducaoAcademicaPage = () => {
             <ul className="space-y-5 pl-4">
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: o Egito Antigo na cultura pop japonesa&rdquo;. <strong><em>International Seminar Egypopcult: Reception of Antiquity in Contemporary Popular Culture</em></strong>. 2024.
+                  CASTRO, Pedro Vinícius de. Orientalismo no Oriente: o Egito Antigo na cultura pop japonesa. <strong>International Seminar Egypopcult: Reception of Antiquity in Contemporary Popular Culture</strong>. 2024.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Seminário</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: gênero e Egito Antigo nos mangás&rdquo;. <strong><em>IX Encontro de Pesquisa na Graduação em História</em></strong>. 2024.
+                  CASTRO, Pedro Vinícius de. Orientalismo no Oriente: gênero e Egito Antigo nos mangás. <strong>IX Encontro de Pesquisa na Graduação em História</strong>. 2024.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Seminário</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito na cultura pop japonesa&rdquo;. <strong><em>III Colóquio Internacional do Antigo Egito e Oriente Próximo, USP</em></strong>. 2023.
+                  CASTRO, Pedro Vinícius de. Orientalismo no Oriente: representações do Egito na cultura pop japonesa. <strong>III Colóquio Internacional do Antigo Egito e Oriente Próximo, USP</strong>. 2023.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. &ldquo;Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa&rdquo;. <strong>Laboratório de Antigo Oriente Próximo, USP</strong>. 2022.
+                  CASTRO, Pedro Vinícius de. Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa. <strong>Laboratório de Antigo Oriente Próximo, USP</strong>. 2022.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Seminário</Tag></div>
               </li>
