@@ -57,33 +57,46 @@ export default function Biografia() {
           fill="currentColor"
         ></path>
       </svg>
-      <div>
-        Contato e perfis:{" "}
-        <a
-          className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
-          href="mailto:pedro.cas@usp.br"
-        >
-          pedro.cas@usp.br
-        </a>
-        ,{" "}
-        <a
-          className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-          href="https://lattes.cnpq.br/1970471858793746"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lattes
-        </a>{" "}
-        e{" "}
-        <a
-          className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-          href="https://orcid.org/0009-0000-4556-3753"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ORCID
-        </a>{" "}
-        (Pedro Vinícius de Castro — 0009-0000-4556-3753).
+      <div className="space-y-2">
+        <div>
+          Contato:{" "}
+          <a
+            className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
+            href="mailto:pedro.cas@usp.br"
+          >
+            pedro.cas@usp.br
+          </a>
+        </div>
+        <div>
+          Perfis:{" "}
+          <a
+            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
+            href="https://lattes.cnpq.br/1970471858793746"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lattes
+          </a>
+          ,{" "}
+          <a
+            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
+            href="https://orcid.org/0009-0000-4556-3753"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ORCID
+          </a>{" "}
+          (0009-0000-4556-3753) e{" "}
+          <a
+            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
+            href="https://usp-br1.academia.edu/PedroCastro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Academia.edu
+          </a>
+          .
+        </div>
       </div>
     </>
   );
