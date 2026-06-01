@@ -106,7 +106,7 @@ const ProjetosPage = () => {
                   <h3 className="text-lg font-semibold"><a href="https://nejap.paginas.ufsc.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">NEJAP</a> (Núcleo de Estudos Japoneses)</h3>
                   <div className="my-2"><Tag>2024 – Atual</Tag></div>
                   <p className="text-zinc-700 dark:text-zinc-300">
-                    Grupo de pesquisa e extensão da UFSC dedicado aos estudos japoneses e asiáticos, com foco em história, literatura, artes e cultura do Japão.
+                    O NEJAP (Núcleo de Estudos Japoneses), fundado em 2008, é um grupo voltado para pesquisa e extensão na área de estudos japoneses e asiáticos, em especial nas áreas de história, literatura, artes e cultura. O Núcleo é formado por alunos de diversas áreas, fazendo jus à interdisciplinaridade exigida por tal empreendimento. O grupo tem como missão divulgar a cultura e história do Japão, preencher a lacuna institucional no que diz respeito à Ásia, possibilitar o aprofundamento de graduandos em sua área de pesquisa, e empreender estudos próprios dentro das áreas temáticas abrangidas.
                   </p>
                 </div>
               </div>
