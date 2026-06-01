@@ -159,7 +159,7 @@ const ProjetosPage = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold">
-                  <a href="https://www.youtube.com/playlist?list=PLkfdTU5bBwmPUADek4joJpLfjpBRTBw3t" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
+                  <a href="https://www.ees.ac.uk/resource/being-egyptian.html" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
                     Being Egyptian
                   </a>
                 </h3>

@@ -81,7 +81,7 @@ const ProducaoAcademicaPage = () => {
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  <a href="https://www.youtube.com/playlist?list=PLkfdTU5bBwmPUADek4joJpLfjpBRTBw3t" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. Edição audiovisual do projeto <em>Being Egyptian — The Egyptian House</em>. Egypt Exploration Society, 2023.</a>
+                  <a href="https://www.ees.ac.uk/resource/being-egyptian.html" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. Edição audiovisual do projeto <em>Being Egyptian — The Egyptian House</em>. Egypt Exploration Society, 2023.</a>
                 </p>
                 <div className="mt-1">
                   <Tag>Editoração audiovisual</Tag>
