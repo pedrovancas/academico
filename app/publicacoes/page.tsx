@@ -112,13 +112,13 @@ const ProducaoAcademicaPage = () => {
             <ul className="space-y-5 pl-4">
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. Entre o anacronismo identitário e a performatividade material: a recepção de Hatshepsut no mangá <em>Aoi Horus no Hitomi</em>. 2026.
+                  CASTRO, Pedro Vinícius de. Entre o anacronismo identitário e a performatividade material: a recepção de Hatshepsut no mangá <em>Aoi Horus no Hitomi</em>. <strong>II Semana GEAFRAS de Estudos Afro-Asiáticos – Quimérico Oriente: a imagética de espaços Afro-Asiáticos</strong>. 2026.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Comunicação</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. Orientalismo no Oriente: Hatshepsut, Egito Antigo e gênero nos mangás. <strong>II Semana GEAFRAS de Estudos Afro-Asiáticos – Quimérico Oriente: a imagética de espaços Afro-Asiáticos</strong>. 2025.
+                  CASTRO, Pedro Vinícius de. Orientalismo no Oriente: Hatshepsut, Egito Antigo e gênero nos mangás. <strong>II Encontro Discente de Estudos Japoneses</strong>. 2025.
                 </p>
                 <div className="mt-1"><Tag>Apresentação de trabalho/Comunicação</Tag></div>
               </li>
