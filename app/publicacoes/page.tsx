@@ -50,6 +50,12 @@ const ProducaoAcademicaPage = () => {
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
+                  <a href="https://drive.google.com/file/d/1qXZk6whJBb3ugTd-zmCFNfp_2h_oGy7F/view" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. <strong>Orientalismo no Oriente: Hatshepsut, Egito Antigo e gênero nos mangás.</strong> In: II Encontro Discente de Estudos Japoneses, 2025, Niterói. <em>Caderno de Resumos do II Encontro Discente de Estudos Japoneses</em>. Niterói, 2025. p. 120.</a>
+                </p>
+                <div className="mt-1"><Tag>Anais de congresso</Tag><Tag>Resumo</Tag></div>
+              </li>
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
                   <a href="https://laop.fflch.usp.br/resumos" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">CASTRO, Pedro Vinícius de. <strong>Orientalismo no Oriente: representações do Egito na cultura pop japonesa.</strong> In: Arquivos e Coleções na Antiguidade Oriental: História e Possibilidades Teórico-Metodológicas. III Colóquio Internacional do Antigo Egito e Oriente Próximo. São Paulo: USP, 2023.</a>
                 </p>
                 <div className="mt-1"><Tag>Anais de congresso</Tag></div>
@@ -104,6 +110,18 @@ const ProducaoAcademicaPage = () => {
               Apresentações de trabalho
             </h2>
             <ul className="space-y-5 pl-4">
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  CASTRO, Pedro Vinícius de. Entre o anacronismo identitário e a performatividade material: a recepção de Hatshepsut no mangá <em>Aoi Horus no Hitomi</em>. 2026.
+                </p>
+                <div className="mt-1"><Tag>Apresentação de trabalho/Comunicação</Tag></div>
+              </li>
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  CASTRO, Pedro Vinícius de. Orientalismo no Oriente: Hatshepsut, Egito Antigo e gênero nos mangás. <strong>II Semana GEAFRAS de Estudos Afro-Asiáticos – Quimérico Oriente: a imagética de espaços Afro-Asiáticos</strong>. 2025.
+                </p>
+                <div className="mt-1"><Tag>Apresentação de trabalho/Comunicação</Tag></div>
+              </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   CASTRO, Pedro Vinícius de. Orientalismo no Oriente: o Egito Antigo na cultura pop japonesa. <strong>International Seminar Egypopcult: Reception of Antiquity in Contemporary Popular Culture</strong>. 2024.

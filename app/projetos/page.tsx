@@ -68,7 +68,7 @@ const ProjetosPage = () => {
 
               {/* IC — antecedente empírico, vinculada à família de pesquisas sobre o Oriente */}
               <div className="border border-zinc-200 dark:border-zinc-700 rounded-lg p-5">
-                <h3 className="text-lg font-semibold">Orientalismo no Oriente: representações do Egito Antigo na cultura pop japonesa</h3>
+                <h3 className="text-lg font-semibold">Orientalismo no Oriente: Hatshepsut, Egito Antigo e gênero nos mangás</h3>
                 <div className="my-2"><Tag>2022 – 2024</Tag><Tag>Situação: Concluído</Tag></div>
                 <dl className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1 mb-3">
                   <div><dt className="inline font-medium">Instituição: </dt><dd className="inline">Universidade de São Paulo (USP)</dd></div>
