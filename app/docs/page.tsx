@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Documentos e Questionário",
   description: "Questionário para levantamento de dados de famílias nipo-descendentes para o projeto de pesquisa.",
+  alternates: {
+    canonical: "/docs",
+  },
 };
 
 export default function DocsPage() {

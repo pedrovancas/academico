@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "check:preview": "biome check .",
-    "check:write": "biome check --write ."
+    "check:write": "biome check --write .",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

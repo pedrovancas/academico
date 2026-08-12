@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Projetos",
   description: "Projetos de pesquisa, grupos e outras iniciativas de Pedro de Castro.",
+  alternates: {
+    canonical: "/projetos",
+  },
 };
 
 // Um pequeno componente para as 'tags' de status e período, para reutilização

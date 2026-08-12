@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Historiae",
   description:
     "Podcast de divulgação histórica com enfoque em História Pública. Produção solo: pesquisa, roteiro, narração e edição de áudio.",
+  alternates: {
+    canonical: "/projetos/historiae",
+  },
 };
 
 const Tag = ({ children }: { children: React.ReactNode }) => (
