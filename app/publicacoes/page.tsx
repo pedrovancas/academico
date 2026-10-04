@@ -41,13 +41,13 @@ const ProducaoAcademicaPage = () => {
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. <strong>&ldquo;A vontade de resistir está em suas mãos&rdquo;: neomedievalismo japonês, agência material e capitalismo tardio em Final Fantasy Tactics.</strong> Neomedieval. Madri: Universidad Rey Juan Carlos. (sob avaliação)
+                  CASTRO, Pedro Vinícius de. <strong>&ldquo;A vontade de resistir está em suas mãos&rdquo;: neomedievalismo japonês, agência material e capitalismo tardio em Final Fantasy Tactics.</strong> Neomedieval. Madri: Universidad Rey Juan Carlos. (aceito/no prelo; previsão: dez. 2026)
                 </p>
-                <div className="mt-1"><Tag>Sob avaliação</Tag><Tag>Internacional</Tag></div>
+                <div className="mt-1"><Tag>Aceito / No prelo</Tag><Tag>Internacional</Tag></div>
               </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  CASTRO, Pedro Vinícius de. <strong>O mangá que virou espelho: como Vinland Saga ressignifica a Idade Média europeia para refletir sobre o Japão.</strong> In: CRISTINA, Maria; DALLAQUA, Matheus; SILVA, Pedro de Oliveira e; COGHETTO, Vitor Eduardo; LOPES, Ana Vitória (orgs.). Medievalismos em imagens e outras mídias. São Paulo: FFLCH/USP, 2026. (Coleção Primeiros olhares). (no prelo)
+                  CASTRO, Pedro Vinícius de. <strong>O mangá que virou espelho: como Vinland Saga ressignifica a Idade Média europeia para refletir sobre o Japão.</strong> In: CRISTINA, Maria; DALLAQUA, Matheus; SILVA, Pedro de Oliveira e; COGHETTO, Vitor Eduardo; LOPES, Ana Vitória (orgs.). Medievalismos em imagens e outras mídias. São Paulo: FFLCH/USP, 2026. (Coleção Primeiros olhares). (no prelo; previsão: dez. 2026)
                 </p>
                 <div className="mt-1"><Tag>Aceito / No prelo</Tag><Tag>Capítulo de livro</Tag></div>
               </li>
@@ -113,6 +113,12 @@ const ProducaoAcademicaPage = () => {
               Apresentações de trabalho
             </h2>
             <ul className="space-y-5 pl-4">
+              <li>
+                <p className="text-zinc-700 dark:text-zinc-300">
+                  CASTRO, Pedro Vinícius de. A Matriz Meiji nos trópicos: cultura material e domesticidade nipo-brasileira a partir da Coleção Kojima (São Paulo, 1956–1992). <strong>VIII Encontro de Pós-Graduandos em Estudos Japoneses</strong>. São Paulo, 2026.
+                </p>
+                <div className="mt-1"><Tag>Apresentação de trabalho/Comunicação</Tag></div>
+              </li>
               <li>
                 <p className="text-zinc-700 dark:text-zinc-300">
                   CASTRO, Pedro Vinícius de. Entre o anacronismo identitário e a performatividade material: a recepção de Hatshepsut no mangá <em>Aoi Horus no Hitomi</em>. <strong>II Semana GEAFRAS de Estudos Afro-Asiáticos – Quimérico Oriente: a imagética de espaços Afro-Asiáticos</strong>. 2026.
