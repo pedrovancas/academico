@@ -42,7 +42,7 @@ const Layer = ({ lang, active }: { lang: Lang; active: boolean }) => {
       }
     >
       {/* Subtítulo curto e com cor mais sutil */}
-      <div className="text-lg leading-snug text-zinc-700 sm:text-xl dark:text-zinc-300">
+      <div className="text-base leading-snug text-zinc-500 dark:text-zinc-400">
         {pt
           ? "Historiador com pesquisa focada na intersecção entre a cultura material japonesa e a experiência imigrante no Brasil."
           : "Historian whose research focuses on the intersection of Japanese material culture and the immigrant experience in Brazil."}

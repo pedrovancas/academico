@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="md:mt-8 lg:mt-10 pt-8 pb-16">
+    <section className="pt-4 md:mt-2 pb-16">
       {/* Dados estruturados (schema.org/Person) — ajuda o Google (e outros
           buscadores) a entender que esta é a página pessoal de um
           pesquisador, e a ligar o site aos seus perfis acadêmicos
@@ -44,18 +44,23 @@ export default function Home() {
           }),
         }}
       />
-      {/* Faixa de imagem no topo, acima do nome */}
-      {/* Em telas grandes a faixa fica mais larga que a coluna de texto */}
-      <div className="relative mb-8 aspect-[3/1] w-full overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm lg:left-1/2 lg:aspect-[7/2] lg:w-[min(64rem,calc(100vw-4rem))] lg:-translate-x-1/2">
-        <Image
-          src="/images/card-benjamin.jpg"
-          alt="Gravura de uma mulher escrevendo ao lado de um globo, com uma pirâmide e um vulcão ao fundo"
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 672px, 1024px"
-          className="object-cover object-[50%_25%] lg:object-[50%_23%] dark:brightness-90"
-        />
-      </div>
+      {/* Figura no topo, como uma ilustração de abertura: em telas grandes ocupa a
+          largura toda, com filetes finos em cima e embaixo e legenda abaixo. */}
+      <figure className="mb-8">
+        <div className="relative aspect-[3/1] w-full overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm lg:left-1/2 lg:aspect-[7/2] lg:w-screen lg:max-h-[26rem] lg:-translate-x-1/2 lg:rounded-none lg:border-x-0 lg:border-zinc-300 lg:shadow-none xl:aspect-[4/1] 2xl:aspect-[9/2] lg:dark:border-zinc-700">
+          <Image
+            src="/images/amp-card-benjamin.jpg"
+            alt="Gravura de uma mulher lendo ao lado de um globo, entre pirâmides, camelos no deserto e uma baía com barcos e montanhas"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center dark:brightness-90"
+          />
+        </div>
+        <figcaption className="mt-2 text-xs italic text-zinc-500 dark:text-zinc-400">
+          Gravura; imagem ampliada digitalmente nas laterais.
+        </figcaption>
+      </figure>
       <Biografia />
       <GridCards />
 

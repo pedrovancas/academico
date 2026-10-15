@@ -58,7 +58,7 @@ interface ChildrenProps {
 export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} overflow-x-clip`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
