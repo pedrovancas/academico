@@ -12,22 +12,48 @@ const linkClass =
 
 const NAME = "Pedro Vinícius de Castro";
 
-// Três recortes da mesma gravura (1600x900). Cada "slide" mostra uma parte
-// diferente: a figura inteira, o globo e o rosto com as mãos e o papel. A posição e o
-// zoom foram ajustados à mão para cada recorte.
-const CROPS = [
-  { position: "61% 50%", scale: 1, origin: "50% 40%" },
-  { position: "35% 50%", scale: 1.5, origin: "48% 58%" },
-  { position: "67% 50%", scale: 1.7, origin: "50% 33%" },
-] as const;
-
-const LABELS: Record<Lang, string[]> = {
-  pt: ["Sobre", "Pesquisa", "Projeto atual"],
-  en: ["About", "Research", "Current project"],
-};
+// Dois recortes da mesma gravura (1600x900), um em cada coluna: a figura
+// inteira, em formato vertical, e o globo com zoom, em formato quadrado.
+// A posição e o zoom foram ajustados à mão para cada recorte.
+const CROP_FIGURE = { position: "61% 50%", scale: 1, origin: "50% 40%" };
+const CROP_GLOBE = { position: "29% 50%", scale: 1.35, origin: "50% 58%" };
 
 const IMAGE_ALT =
   "Gravura de uma mulher escrevendo ao lado de um globo, com uma pirâmide e um vulcão ao fundo";
+const GLOBE_ALT = "Detalhe da mesma gravura: um globo terrestre sobre livros";
+
+const Crop = ({
+  crop,
+  alt,
+  className,
+  priority,
+}: {
+  crop: { position: string; scale: number; origin: string };
+  alt: string;
+  className: string;
+  priority?: boolean;
+}) => (
+  <div
+    className={
+      "relative w-full overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm " +
+      className
+    }
+  >
+    <Image
+      src="/images/card-benjamin.jpg"
+      alt={alt}
+      fill
+      priority={priority}
+      sizes="(max-width: 1024px) 270px, 240px"
+      className="object-cover dark:brightness-90"
+      style={{
+        objectPosition: crop.position,
+        transform: `scale(${crop.scale})`,
+        transformOrigin: crop.origin,
+      }}
+    />
+  </div>
+);
 
 const Divider = () => (
   <svg
@@ -45,7 +71,7 @@ const Divider = () => (
   </svg>
 );
 
-// Texto de cada slide, nos dois idiomas. Todas as camadas ficam no DOM,
+// Texto de cada coluna, nos dois idiomas. Todas as camadas ficam no DOM,
 // sobrepostas na mesma célula do grid; só a ativa fica visível.
 const SlideText = ({ lang, index }: { lang: Lang; index: number }) => {
   const pt = lang === "pt";
@@ -62,12 +88,26 @@ const SlideText = ({ lang, index }: { lang: Lang; index: number }) => {
             : "Historian whose research focuses on the intersection of Japanese material culture and the immigrant experience in Brazil."}
         </p>
         <p className="mt-4">
-          {pt ? "Mestrando em História Social pela " : "Master's candidate in Social History at the "}
-          <Link href="https://fflch.usp.br/" target="_blank" className={linkClass}>
-            {pt ? "Universidade de São Paulo (PPGHS-FFLCH/USP)" : "University of São Paulo (PPGHS-FFLCH/USP)"}
+          {pt
+            ? "Mestrando em História Social pela "
+            : "Master's candidate in Social History at the "}
+          <Link
+            href="https://fflch.usp.br/"
+            target="_blank"
+            className={linkClass}
+          >
+            {pt
+              ? "Universidade de São Paulo (PPGHS-FFLCH/USP)"
+              : "University of São Paulo (PPGHS-FFLCH/USP)"}
           </Link>
-          {pt ? " e pesquisador associado ao " : " and researcher associated with the "}
-          <Link href="https://museudoipiranga.org.br/" target="_blank" className={linkClass}>
+          {pt
+            ? " e pesquisador associado ao "
+            : " and researcher associated with the "}
+          <Link
+            href="https://museudoipiranga.org.br/"
+            target="_blank"
+            className={linkClass}
+          >
             {pt ? "Museu do Ipiranga (USP)" : "Ipiranga Museum (USP)"}
           </Link>
           .
@@ -76,27 +116,17 @@ const SlideText = ({ lang, index }: { lang: Lang; index: number }) => {
     );
   }
 
-  if (index === 1) {
-    return (
-      <>
-        <h2 className="text-lg font-bold uppercase tracking-[0.14em] dark:text-white">
-          {LABELS[lang][1]}
-        </h2>
-        <p className="mt-4">
-          {pt
-            ? "Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade em mídias visuais japonesas contemporâneas."
-            : "His research addresses modern Japanese history, transnational material culture, domestic space, and the reception of antiquity in contemporary Japanese visual media."}
-        </p>
-      </>
-    );
-  }
-
   return (
     <>
       <h2 className="text-lg font-bold uppercase tracking-[0.14em] dark:text-white">
-        {LABELS[lang][2]}
+        {pt ? "Pesquisa" : "Research"}
       </h2>
       <p className="mt-4">
+        {pt
+          ? "Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade em mídias visuais japonesas contemporâneas."
+          : "His research addresses modern Japanese history, transnational material culture, domestic space, and the reception of antiquity in contemporary Japanese visual media."}
+      </p>
+      <p className="mt-3">
         {pt
           ? "Seu projeto atual estuda o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses em Mauá (SP), a partir do cruzamento entre cultura material, história oral e arquivo."
           : "His current project examines the domestic-industrial complex of the Kojima family, Japanese immigrant ceramists in Mauá (SP), through the intersection of material culture, oral history, and archival research."}
@@ -193,91 +223,63 @@ const LangButton = ({
 
 export default function Biografia() {
   const [lang, setLang] = useState<Lang>("pt");
-  const [slide, setSlide] = useState(0);
 
   return (
     <>
-      {/* Seletor de idioma */}
-      <div
-        role="group"
-        aria-label="Idioma / Language"
-        className="mb-4 flex items-center justify-end gap-1 text-xs font-medium text-zinc-500 dark:text-zinc-400"
-      >
-        <LangButton value="pt" current={lang} onSelect={setLang} />
-        <LangButton value="en" current={lang} onSelect={setLang} />
-      </div>
-
-      <div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-8">
-        {/* Imagem: três recortes da mesma gravura, em fade */}
-        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm md:aspect-[3/4]">
-          {CROPS.map((crop, i) => (
-            <Image
-              key={crop.position}
-              src="/images/card-benjamin.jpg"
-              alt={i === 0 ? IMAGE_ALT : ""}
-              aria-hidden={i !== 0}
-              fill
-              priority={i === 0}
-              sizes="(max-width: 768px) 100vw, 270px"
-              className={
-                "object-cover dark:brightness-90 transition-[opacity,transform] duration-700 ease-in-out " +
-                (slide === i ? "opacity-100" : "opacity-0")
-              }
-              style={{
-                objectPosition: crop.position,
-                transform: `scale(${slide === i ? crop.scale : crop.scale * 1.05})`,
-                transformOrigin: crop.origin,
-              }}
-            />
-          ))}
+      {/* Em telas grandes, o bloco de imagens e texto fica mais largo que a coluna do site */}
+      <div className="lg:relative lg:left-1/2 lg:w-[min(72rem,calc(100vw-4rem))] lg:-translate-x-1/2">
+        {/* Seletor de idioma */}
+        <div
+          role="group"
+          aria-label="Idioma / Language"
+          className="mb-4 flex items-center justify-end gap-1 text-xs font-medium text-zinc-500 dark:text-zinc-400"
+        >
+          <LangButton value="pt" current={lang} onSelect={setLang} />
+          <LangButton value="en" current={lang} onSelect={setLang} />
         </div>
 
-        {/* Texto + navegação dos slides */}
-        <div className="flex flex-col justify-between gap-6">
-          <div className="grid text-zinc-600 dark:text-zinc-400">
-            {(["pt", "en"] as const).flatMap((l) =>
-              [0, 1, 2].map((i) => {
-                const active = lang === l && slide === i;
-                return (
-                  <div
-                    key={`${l}-${i}`}
-                    lang={l === "pt" ? "pt-BR" : "en"}
-                    aria-hidden={!active}
-                    inert={!active}
-                    className={
-                      "col-start-1 row-start-1 transition-[opacity,visibility] duration-300 ease-in-out " +
-                      (active ? "opacity-100 visible" : "opacity-0 invisible")
-                    }
-                  >
-                    <SlideText lang={l} index={i} />
-                  </div>
-                );
-              }),
-            )}
-          </div>
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
+          {[0, 1].map((col) => (
+            <div
+              key={col}
+              className="grid items-start gap-5 sm:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] sm:gap-6"
+            >
+              {col === 0 ? (
+                <Crop
+                  crop={CROP_FIGURE}
+                  alt={IMAGE_ALT}
+                  priority
+                  className="aspect-[3/4] max-w-[15rem] sm:max-w-none"
+                />
+              ) : (
+                <Crop
+                  crop={CROP_GLOBE}
+                  alt={GLOBE_ALT}
+                  className="aspect-square max-w-[15rem] sm:max-w-none"
+                />
+              )}
 
-          <div
-            role="group"
-            aria-label={lang === "pt" ? "Seções" : "Sections"}
-            className="flex flex-wrap gap-2"
-          >
-            {LABELS[lang].map((label, i) => (
-              <button
-                key={label}
-                type="button"
-                onClick={() => setSlide(i)}
-                aria-pressed={slide === i}
-                className={
-                  "rounded-full px-3 py-1 text-xs font-medium transition-colors " +
-                  (slide === i
-                    ? "bg-black text-white dark:bg-white dark:text-black"
-                    : "bg-zinc-100 text-zinc-600 hover:text-black dark:bg-zinc-800 dark:text-zinc-300 dark:hover:text-white")
-                }
-              >
-                {label}
-              </button>
-            ))}
-          </div>
+              <div className="grid text-zinc-600 dark:text-zinc-400">
+                {(["pt", "en"] as const).map((l) => {
+                  const active = lang === l;
+                  return (
+                    <div
+                      key={l}
+                      lang={l === "pt" ? "pt-BR" : "en"}
+                      aria-hidden={!active}
+                      inert={!active}
+                      className={
+                        "col-start-1 row-start-1 transition-[opacity,visibility] duration-300 ease-in-out " +
+                        (active ? "opacity-100 visible" : "opacity-0 invisible")
+                      }
+                    >
+                      <SlideText lang={l} index={col} />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
