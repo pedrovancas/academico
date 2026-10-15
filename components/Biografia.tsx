@@ -1,6 +1,7 @@
 "use client";
 
 // components/Biografia.tsx
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -8,6 +9,25 @@ type Lang = "pt" | "en";
 
 const linkClass =
   "link text-black dark:text-white/95 underline underline-offset-auto";
+
+const NAME = "Pedro Vinícius de Castro";
+
+// Três recortes da mesma gravura (1600x900). Cada "slide" mostra uma parte
+// diferente: a figura inteira, o globo e o rosto com as mãos e o papel. A posição e o
+// zoom foram ajustados à mão para cada recorte.
+const CROPS = [
+  { position: "61% 50%", scale: 1, origin: "50% 40%" },
+  { position: "35% 50%", scale: 1.5, origin: "48% 58%" },
+  { position: "67% 50%", scale: 1.7, origin: "50% 33%" },
+] as const;
+
+const LABELS: Record<Lang, string[]> = {
+  pt: ["Sobre", "Pesquisa", "Projeto atual"],
+  en: ["About", "Research", "Current project"],
+};
+
+const IMAGE_ALT =
+  "Gravura de uma mulher escrevendo ao lado de um globo, com uma pirâmide e um vulcão ao fundo";
 
 const Divider = () => (
   <svg
@@ -25,32 +45,23 @@ const Divider = () => (
   </svg>
 );
 
-// Uma "camada" por idioma. As duas ficam no DOM, sobrepostas na mesma célula
-// do grid, e a troca é só um fade de opacidade (sem recarregar a página).
-// Isso mantém os dois textos no HTML inicial, o que ajuda a indexação.
-const Layer = ({ lang, active }: { lang: Lang; active: boolean }) => {
+// Texto de cada slide, nos dois idiomas. Todas as camadas ficam no DOM,
+// sobrepostas na mesma célula do grid; só a ativa fica visível.
+const SlideText = ({ lang, index }: { lang: Lang; index: number }) => {
   const pt = lang === "pt";
 
-  return (
-    <div
-      lang={pt ? "pt-BR" : "en"}
-      aria-hidden={!active}
-      inert={!active}
-      className={
-        "col-start-1 row-start-1 transition-[opacity,visibility] duration-300 ease-in-out " +
-        (active ? "opacity-100 visible" : "opacity-0 invisible")
-      }
-    >
-      {/* Subtítulo curto e com cor mais sutil */}
-      <div className="text-base text-zinc-500 dark:text-zinc-400">
-        {pt
-          ? "Historiador com pesquisa focada na intersecção entre a cultura material japonesa e a experiência imigrante no Brasil."
-          : "Historian whose research focuses on the intersection of Japanese material culture and the immigrant experience in Brazil."}
-      </div>
-
-      {/* Biografia */}
-      <div className="mt-8 space-y-4 text-zinc-600 dark:text-zinc-400">
-        <p>
+  if (index === 0) {
+    return (
+      <>
+        <h1 className="text-lg font-bold uppercase tracking-[0.14em] dark:text-white">
+          {NAME}
+        </h1>
+        <p className="mt-2 text-zinc-500 dark:text-zinc-400">
+          {pt
+            ? "Historiador com pesquisa focada na intersecção entre a cultura material japonesa e a experiência imigrante no Brasil."
+            : "Historian whose research focuses on the intersection of Japanese material culture and the immigrant experience in Brazil."}
+        </p>
+        <p className="mt-4">
           {pt ? "Mestrando em História Social pela " : "Master's candidate in Social History at the "}
           <Link href="https://fflch.usp.br/" target="_blank" className={linkClass}>
             {pt ? "Universidade de São Paulo (PPGHS-FFLCH/USP)" : "University of São Paulo (PPGHS-FFLCH/USP)"}
@@ -59,60 +70,97 @@ const Layer = ({ lang, active }: { lang: Lang; active: boolean }) => {
           <Link href="https://museudoipiranga.org.br/" target="_blank" className={linkClass}>
             {pt ? "Museu do Ipiranga (USP)" : "Ipiranga Museum (USP)"}
           </Link>
-          {pt
-            ? ". Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade em mídias visuais japonesas contemporâneas."
-            : ". His research addresses modern Japanese history, transnational material culture, domestic space, and the reception of antiquity in contemporary Japanese visual media."}
-        </p>
-        <p>
-          {pt
-            ? "Seu projeto atual estuda o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses em Mauá (SP), a partir do cruzamento entre cultura material, história oral e arquivo."
-            : "His current project examines the domestic-industrial complex of the Kojima family, Japanese immigrant ceramists in Mauá (SP), through the intersection of material culture, oral history, and archival research."}
-        </p>
-      </div>
-
-      <Divider />
-
-      {/* Contato e perfis */}
-      <div className="space-y-2">
-        <div>
-          {pt ? "Contato:" : "Contact:"}{" "}
-          <a
-            className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
-            href="mailto:pedro.cas@usp.br"
-          >
-            pedro.cas@usp.br
-          </a>
-        </div>
-        <div>
-          {pt ? "Perfis:" : "Profiles:"}{" "}
-          <a
-            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-            href="https://lattes.cnpq.br/1970471858793746"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lattes
-          </a>
-          ,{" "}
-          <a
-            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-            href="https://usp-br1.academia.edu/PedroCastro"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Academia.edu
-          </a>{" "}
-          {pt ? "e" : "and"}{" "}
-          <a
-            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-            href="https://orcid.org/0009-0000-4556-3753"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ORCID
-          </a>
           .
-        </div>
+        </p>
+      </>
+    );
+  }
+
+  if (index === 1) {
+    return (
+      <>
+        <h2 className="text-lg font-bold uppercase tracking-[0.14em] dark:text-white">
+          {LABELS[lang][1]}
+        </h2>
+        <p className="mt-4">
+          {pt
+            ? "Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade em mídias visuais japonesas contemporâneas."
+            : "His research addresses modern Japanese history, transnational material culture, domestic space, and the reception of antiquity in contemporary Japanese visual media."}
+        </p>
+      </>
+    );
+  }
+
+  return (
+    <>
+      <h2 className="text-lg font-bold uppercase tracking-[0.14em] dark:text-white">
+        {LABELS[lang][2]}
+      </h2>
+      <p className="mt-4">
+        {pt
+          ? "Seu projeto atual estuda o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses em Mauá (SP), a partir do cruzamento entre cultura material, história oral e arquivo."
+          : "His current project examines the domestic-industrial complex of the Kojima family, Japanese immigrant ceramists in Mauá (SP), through the intersection of material culture, oral history, and archival research."}
+      </p>
+      <p className="mt-3">
+        <Link href="/projetos" className={linkClass}>
+          {pt ? "Ver projetos" : "See projects"}
+        </Link>
+      </p>
+    </>
+  );
+};
+
+const Contact = ({ lang, active }: { lang: Lang; active: boolean }) => {
+  const pt = lang === "pt";
+
+  return (
+    <div
+      lang={pt ? "pt-BR" : "en"}
+      aria-hidden={!active}
+      inert={!active}
+      className={
+        "col-start-1 row-start-1 space-y-2 transition-[opacity,visibility] duration-300 ease-in-out " +
+        (active ? "opacity-100 visible" : "opacity-0 invisible")
+      }
+    >
+      <div>
+        {pt ? "Contato:" : "Contact:"}{" "}
+        <a
+          className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
+          href="mailto:pedro.cas@usp.br"
+        >
+          pedro.cas@usp.br
+        </a>
+      </div>
+      <div>
+        {pt ? "Perfis:" : "Profiles:"}{" "}
+        <a
+          className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
+          href="https://lattes.cnpq.br/1970471858793746"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Lattes
+        </a>
+        ,{" "}
+        <a
+          className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
+          href="https://usp-br1.academia.edu/PedroCastro"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Academia.edu
+        </a>{" "}
+        {pt ? "e" : "and"}{" "}
+        <a
+          className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
+          href="https://orcid.org/0009-0000-4556-3753"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ORCID
+        </a>
+        .
       </div>
     </div>
   );
@@ -145,27 +193,100 @@ const LangButton = ({
 
 export default function Biografia() {
   const [lang, setLang] = useState<Lang>("pt");
+  const [slide, setSlide] = useState(0);
 
   return (
     <>
-      {/* Nome com destaque + seletor de idioma */}
-      <div className="flex items-start justify-between gap-4">
-        <h1 className="mt-0 mb-1 text-2xl font-bold tracking-tight dark:text-white">
-          Pedro Vinícius de Castro
-        </h1>
-        <div
-          role="group"
-          aria-label="Idioma / Language"
-          className="shrink-0 flex items-center gap-1 text-xs font-medium text-zinc-500 dark:text-zinc-400"
-        >
-          <LangButton value="pt" current={lang} onSelect={setLang} />
-          <LangButton value="en" current={lang} onSelect={setLang} />
+      {/* Seletor de idioma */}
+      <div
+        role="group"
+        aria-label="Idioma / Language"
+        className="mb-4 flex items-center justify-end gap-1 text-xs font-medium text-zinc-500 dark:text-zinc-400"
+      >
+        <LangButton value="pt" current={lang} onSelect={setLang} />
+        <LangButton value="en" current={lang} onSelect={setLang} />
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-8">
+        {/* Imagem: três recortes da mesma gravura, em fade */}
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm md:aspect-[3/4]">
+          {CROPS.map((crop, i) => (
+            <Image
+              key={crop.position}
+              src="/images/card-benjamin.jpg"
+              alt={i === 0 ? IMAGE_ALT : ""}
+              aria-hidden={i !== 0}
+              fill
+              priority={i === 0}
+              sizes="(max-width: 768px) 100vw, 270px"
+              className={
+                "object-cover dark:brightness-90 transition-[opacity,transform] duration-700 ease-in-out " +
+                (slide === i ? "opacity-100" : "opacity-0")
+              }
+              style={{
+                objectPosition: crop.position,
+                transform: `scale(${slide === i ? crop.scale : crop.scale * 1.05})`,
+                transformOrigin: crop.origin,
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Texto + navegação dos slides */}
+        <div className="flex flex-col justify-between gap-6">
+          <div className="grid text-zinc-600 dark:text-zinc-400">
+            {(["pt", "en"] as const).flatMap((l) =>
+              [0, 1, 2].map((i) => {
+                const active = lang === l && slide === i;
+                return (
+                  <div
+                    key={`${l}-${i}`}
+                    lang={l === "pt" ? "pt-BR" : "en"}
+                    aria-hidden={!active}
+                    inert={!active}
+                    className={
+                      "col-start-1 row-start-1 transition-[opacity,visibility] duration-300 ease-in-out " +
+                      (active ? "opacity-100 visible" : "opacity-0 invisible")
+                    }
+                  >
+                    <SlideText lang={l} index={i} />
+                  </div>
+                );
+              }),
+            )}
+          </div>
+
+          <div
+            role="group"
+            aria-label={lang === "pt" ? "Seções" : "Sections"}
+            className="flex flex-wrap gap-2"
+          >
+            {LABELS[lang].map((label, i) => (
+              <button
+                key={label}
+                type="button"
+                onClick={() => setSlide(i)}
+                aria-pressed={slide === i}
+                className={
+                  "rounded-full px-3 py-1 text-xs font-medium transition-colors " +
+                  (slide === i
+                    ? "bg-black text-white dark:bg-white dark:text-black"
+                    : "bg-zinc-100 text-zinc-600 hover:text-black dark:bg-zinc-800 dark:text-zinc-300 dark:hover:text-white")
+                }
+              >
+                {label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
+      <Divider />
+
+      {/* Contato e perfis */}
       <div className="grid">
-        <Layer lang="pt" active={lang === "pt"} />
-        <Layer lang="en" active={lang === "en"} />
+        <Contact lang="pt" active={lang === "pt"} />
+        <Contact lang="en" active={lang === "en"} />
       </div>
     </>
   );
