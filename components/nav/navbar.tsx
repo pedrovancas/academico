@@ -24,7 +24,7 @@ const NavBar = () => {
     <div className="flex items-center shrink-0">
       <nav className="flex gap-2 rounded-3xl px-1 py-2">
         {navItems.map(({ name, href }) => (
-          <div key={name.charCodeAt(0)}>
+          <div key={href}>
             <Link
               className={
                 "relative transition-all transform-gpu rounded-full px-3 py-2 " +
