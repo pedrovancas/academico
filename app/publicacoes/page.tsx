@@ -34,9 +34,7 @@ const ProducaoAcademicaPage = () => {
             </h2>
             <div className="space-y-6 pl-4">
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400 mb-3">
-                  Aceitos / no prelo
-                </h3>
+                <h3 className="text-base font-semibold mb-3">No prelo</h3>
                 <ul className="space-y-4">
                   <li>
                     <p className="text-zinc-700 dark:text-zinc-300">
@@ -54,9 +52,7 @@ const ProducaoAcademicaPage = () => {
               </div>
 
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400 mb-3">
-                  Sob avaliação
-                </h3>
+                <h3 className="text-base font-semibold mb-3">Sob avaliação</h3>
                 <ul className="space-y-4">
                   <li>
                     <p className="text-zinc-700 dark:text-zinc-300">
