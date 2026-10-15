@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Projetos",
-  description: "Projetos de pesquisa, grupos e outras iniciativas de Pedro de Castro.",
+  description: "Projetos de pesquisa, grupos e outras iniciativas de Pedro Vinícius de Castro.",
   alternates: {
     canonical: "/projetos",
   },
@@ -28,6 +28,32 @@ const ProjetosPage = () => {
         </div>
 
         <div className="space-y-12">
+          {/* Seção 0: Biografia completa (a home traz só a versão curta) */}
+          <article id="biografia" className="scroll-mt-8">
+            <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
+              Biografia
+            </h2>
+            <div className="space-y-4 pl-4 text-zinc-700 dark:text-zinc-300">
+              <p>
+                Mestrando em História Social pela{" "}
+                <a href="https://fflch.usp.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Universidade de São Paulo (PPGHS-FFLCH/USP)</a>
+                , vinculado ao{" "}
+                <a href="https://museudoipiranga.org.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Museu Paulista</a>{" "}
+                e ao{" "}
+                <a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades (GEMA/FAU-USP)</a>
+                , sob orientação da Profa. Dra. Vânia Carneiro de Carvalho. Desenvolve pesquisa sobre o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses estabelecidos em Mauá, SP, investigando as interseções entre espaço doméstico, produção cerâmica e processos de enraizamento da comunidade nikkei no estado de São Paulo, a partir de metodologias de análise de cultura material e história oral.
+              </p>
+              <p>
+                Graduado em História pela mesma universidade, realizou pesquisa de Iniciação Científica sobre as representações do Egito Antigo na cultura pop japonesa (orient. Dra. Thaís Rocha da Silva), com apresentações em eventos nacionais e internacionais. Possui experiência em trabalho de acervo e catalogação de coleções museológicas no Museu Paulista da USP (coleções Kojima e Zappi) e atuou como assistente editorial da Revista África (CEA-USP).
+              </p>
+              <p>
+                Integrou projetos de divulgação científica, com destaque para a edição audiovisual do projeto internacional Being Egyptian (Egypt Exploration Society), voltado ao estudo do espaço doméstico no Egito Antigo, e a produção do podcast Historiae. É membro do{" "}
+                <a href="https://nejap.paginas.ufsc.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">NEJAP (Núcleo de Estudos Japoneses/UFSC)</a>
+                {" "}e contribuiu para a organização do III Colóquio Internacional do Antigo Egito e Oriente Próximo (USP, 2023).
+              </p>
+            </div>
+          </article>
+
           {/* Seção 1: Pesquisa Atual */}
           <article>
             <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
@@ -65,7 +91,7 @@ const ProjetosPage = () => {
                   <div><dt className="inline font-medium">Vínculo: </dt><dd className="inline"><a href="https://museudoipiranga.org.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Museu Paulista (Museu do Ipiranga) da Universidade de São Paulo</a> / <a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">GEMA</a></dd></div>
                 </dl>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  Análise e catalogação da produção cerâmica da família Kojima, imigrantes japoneses do período Pós-Guerra estabelecidos na Grande São Paulo. A pesquisa debruçou-se sobre a coleção de artefatos da família sob a guarda do Museu Paulista da Universidade de São Paulo, compreendendo o levantamento, a classificação tipológica e o registro de metadados de 55 peças cerâmicas em planilha institucional padronizada. O trabalho de catalogação foi acompanhado de pesquisa documental e de história oral junto a membros da família, com destaque para entrevista realizada com Yasuichi Kojima (março de 2025), que permitiu a reconstituição de etapas do processo produtivo e da trajetória de instalação da olaria familiar em Mauá, SP. Os resultados constituem a base empírica para o projeto de mestrado em desenvolvimento no PPGHS-USP.
+                  Análise e catalogação da produção cerâmica da família Kojima, imigrantes japoneses do período Pós-Guerra estabelecidos na Grande São Paulo. A pesquisa debruçou-se sobre a coleção de artefatos da família sob a guarda do Museu Paulista da Universidade de São Paulo, compreendendo o levantamento, a classificação tipológica e o registro de metadados de 55 peças cerâmicas em planilha institucional padronizada. O trabalho de catalogação foi acompanhado de pesquisa documental e de história oral junto a membros da família, com destaque para entrevista realizada com um membro da família (março de 2025), que permitiu a reconstituição de etapas do processo produtivo e da trajetória de instalação da olaria familiar em Mauá, SP. Os resultados constituem a base empírica para o projeto de mestrado em desenvolvimento no PPGHS-USP.
                 </p>
               </div>
 

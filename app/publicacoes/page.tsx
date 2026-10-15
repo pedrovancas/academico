@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Produção acadêmica",
-  description: "Publicações, apresentações de trabalho e produção técnica de Pedro de Castro.",
+  description: "Publicações, apresentações de trabalho e produção técnica de Pedro Vinícius de Castro.",
   alternates: {
     canonical: "/publicacoes",
   },
