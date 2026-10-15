@@ -24,6 +24,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "Person",
             name: "Pedro Vinícius de Castro",
+            alternateName: "ペドロ・ヴィニシウス・デ・カストロ",
             url: "https://pedrocas.vercel.app",
             jobTitle: "Historiador",
             description:

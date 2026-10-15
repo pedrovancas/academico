@@ -57,7 +57,7 @@ const Layer = ({ lang, active }: { lang: Lang; active: boolean }) => {
           </Link>
           {pt ? " e pesquisador associado ao " : " and researcher associated with the "}
           <Link href="https://museudoipiranga.org.br/" target="_blank" className={linkClass}>
-            {pt ? "Museu Paulista (USP)" : "Paulista Museum (USP)"}
+            {pt ? "Museu do Ipiranga (USP)" : "Ipiranga Museum (USP)"}
           </Link>
           {pt
             ? ". Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade em mídias visuais japonesas contemporâneas."

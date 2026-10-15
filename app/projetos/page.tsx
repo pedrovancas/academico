@@ -38,13 +38,13 @@ const ProjetosPage = () => {
                 Mestrando em História Social pela{" "}
                 <a href="https://fflch.usp.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Universidade de São Paulo (PPGHS-FFLCH/USP)</a>
                 , vinculado ao{" "}
-                <a href="https://museudoipiranga.org.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Museu Paulista</a>{" "}
+                <a href="https://museudoipiranga.org.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Museu do Ipiranga</a>{" "}
                 e ao{" "}
                 <a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades (GEMA/FAU-USP)</a>
                 , sob orientação da Profa. Dra. Vânia Carneiro de Carvalho. Desenvolve pesquisa sobre o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses estabelecidos em Mauá, SP, investigando as interseções entre espaço doméstico, produção cerâmica e processos de enraizamento da comunidade nikkei no estado de São Paulo, a partir de metodologias de análise de cultura material e história oral.
               </p>
               <p>
-                Graduado em História pela mesma universidade, realizou pesquisa de Iniciação Científica sobre as representações do Egito Antigo na cultura pop japonesa (orient. Dra. Thaís Rocha da Silva), com apresentações em eventos nacionais e internacionais. Possui experiência em trabalho de acervo e catalogação de coleções museológicas no Museu Paulista da USP (coleções Kojima e Zappi) e atuou como assistente editorial da Revista África (CEA-USP).
+                Graduado em História pela mesma universidade, realizou pesquisa de Iniciação Científica sobre as representações do Egito Antigo na cultura pop japonesa (orient. Dra. Thaís Rocha da Silva), com apresentações em eventos nacionais e internacionais. Possui experiência em trabalho de acervo e catalogação de coleções museológicas no Museu do Ipiranga da USP (coleções Kojima e Zappi) e atuou como assistente editorial da Revista África (CEA-USP).
               </p>
               <p>
                 Integrou projetos de divulgação científica, com destaque para a edição audiovisual do projeto internacional Being Egyptian (Egypt Exploration Society), voltado ao estudo do espaço doméstico no Egito Antigo, e a produção do podcast Historiae. É membro do{" "}
