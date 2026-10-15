@@ -21,19 +21,14 @@ export default function Biografia() {
           <Link href="https://fflch.usp.br/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
             Universidade de São Paulo (PPGHS-FFLCH/USP)
           </Link>
-          , vinculado ao{" "}
+          {" "}e pesquisador associado ao{" "}
           <Link href="https://museudoipiranga.org.br/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
-            Museu Paulista
-          </Link>{" "}
-          e ao{" "}
-          <Link href="https://sites.usp.br/gema/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
-            GEMA
+            Museu Paulista (USP)
           </Link>
-          , sob orientação da Profa. Dra. Vânia Carneiro de Carvalho. Pesquisa o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses em Mauá (SP), a partir de cultura material e história oral.{" "}
-          <Link href="/projetos#biografia" className="link text-black dark:text-white/95 underline underline-offset-auto">
-            Biografia completa
-          </Link>
-          .
+          . Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade em mídias visuais japonesas contemporâneas.
+        </p>
+        <p>
+          Seu projeto atual estuda o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses em Mauá (SP), a partir do cruzamento entre cultura material, história oral e arquivo.
         </p>
       </div>
       
