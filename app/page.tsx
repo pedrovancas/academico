@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Biografia from "@/components/Biografia";
 import GridCards from "@/components/GridCards";
 
@@ -43,6 +44,18 @@ export default function Home() {
           }),
         }}
       />
+      {/* Faixa de imagem no topo, acima do nome */}
+      {/* Em telas grandes a faixa fica mais larga que a coluna de texto */}
+      <div className="relative mb-8 aspect-[3/1] w-full overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm lg:left-1/2 lg:aspect-[7/2] lg:w-[min(64rem,calc(100vw-4rem))] lg:-translate-x-1/2">
+        <Image
+          src="/images/card-benjamin.jpg"
+          alt="Gravura de uma mulher escrevendo ao lado de um globo, com uma pirâmide e um vulcão ao fundo"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 672px, 1024px"
+          className="object-cover object-[50%_25%] lg:object-[50%_23%] dark:brightness-90"
+        />
+      </div>
       <Biografia />
       <GridCards />
 
