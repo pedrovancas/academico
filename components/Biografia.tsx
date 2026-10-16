@@ -33,32 +33,11 @@ const Layer = ({ lang, active }: { lang: Lang; active: boolean }) => {
         (active ? "opacity-100 visible" : "opacity-0 invisible")
       }
     >
-      {/* Frase de abertura, grande, com trechos em destaque */}
-      <h1 className="max-w-3xl text-3xl font-normal leading-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
-        {pt ? (
-          <>
-            Historiador com pesquisa focada na intersecção entre a{" "}
-            <strong className="font-bold">cultura material japonesa</strong> e a{" "}
-            <em className="underline decoration-pink-400 decoration-2 underline-offset-4">
-              experiência imigrante
-            </em>{" "}
-            no Brasil.
-          </>
-        ) : (
-          <>
-            Historian whose research focuses on the intersection of{" "}
-            <strong className="font-bold">Japanese material culture</strong> and
-            the{" "}
-            <em className="underline decoration-pink-400 decoration-2 underline-offset-4">
-              immigrant experience
-            </em>{" "}
-            in Brazil.
-          </>
-        )}
-      </h1>
+      {/* Título da página, só para leitores de tela e buscadores */}
+      <h1 className="sr-only">Pedro Vinícius de Castro</h1>
 
       {/* Apresentação, em corpo menor */}
-      <div className="mt-6 max-w-3xl space-y-3 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+      <div className="max-w-3xl space-y-3 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
         <p>
           <strong className="font-bold text-zinc-900 dark:text-zinc-50">
             Pedro Vinícius de Castro
