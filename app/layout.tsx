@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import { Footer } from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
+import Shell from "@/components/layouts/shell";
 import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import gradientImg from "@/public/images/gradient.webp";
@@ -58,14 +59,14 @@ interface ChildrenProps {
 export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${inter.className} overflow-x-clip`}>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container max-w-3xl mx-auto min-h-screen flex flex-col px-4 py-5">
+          <Shell>
             <div className="flex-1">
               <Header />
               {children}
@@ -78,7 +79,7 @@ export default function RootLayout({ children }: ChildrenProps) {
               alt="Gradient background"
               priority
             />
-          </div>
+          </Shell>
           <Toaster />
         </ThemeProvider>
       </body>
