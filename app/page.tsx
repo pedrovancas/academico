@@ -51,7 +51,7 @@ export default function Home() {
       <GridCards />
 
       {/* Seção da Citação Atualizada */}
-      <blockquote className="mx-auto mt-12 max-w-3xl p-4 border-l-4 border-zinc-300 dark:border-zinc-700">
+      <blockquote className="mt-12 w-full p-4 border-l-4 border-zinc-300 dark:border-zinc-700">
         <p className="text-lg italic text-zinc-600 dark:text-zinc-400">
           “Um acontecimento vivido é finito, ou pelo menos encerrado na esfera
           do vivido, ao passo que o acontecimento lembrado é sem limites, porque

@@ -65,8 +65,8 @@ const Layer = ({ lang, active }: { lang: Lang; active: boolean }) => {
             {pt ? "Museu do Ipiranga (USP)" : "Ipiranga Museum (USP)"}
           </Link>
           {pt
-            ? ". Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade em mídias visuais japonesas contemporâneas."
-            : ". His research addresses modern Japanese history, transnational material culture, domestic space, and the reception of antiquity in contemporary Japanese visual media."}
+            ? ". Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade e da Idade Média em mídias visuais japonesas contemporâneas."
+            : ". His research addresses modern Japanese history, transnational material culture, domestic space, and the reception of antiquity and the Middle Ages in contemporary Japanese visual media."}
         </p>
         <p>
           {pt
