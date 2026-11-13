@@ -65,13 +65,23 @@ const Layer = ({ lang, active }: { lang: Lang; active: boolean }) => {
             {pt ? "Museu do Ipiranga (USP)" : "Ipiranga Museum (USP)"}
           </Link>
           {pt
-            ? ". Sua pesquisa aborda história japonesa moderna, cultura material transnacional, espaço doméstico e a recepção da Antiguidade e da Idade Média em mídias visuais japonesas contemporâneas."
-            : ". His research addresses modern Japanese history, transnational material culture, domestic space, and the reception of antiquity and the Middle Ages in contemporary Japanese visual media."}
+            ? ". Pesquisa a história do Japão moderno pela cultura material, com atenção à circulação de pessoas, objetos e repertórios entre o Japão e outras partes do mundo. O interesse pelo espaço doméstico vem de sua formação em egiptologia, no trabalho com a iniciação científica e no projeto "
+            : ". He researches the history of modern Japan through material culture, with attention to the circulation of people, objects, and repertoires between Japan and other parts of the world. His interest in domestic space comes from his training in Egyptology, his undergraduate research, and the "}
+          <Link
+            href="https://www.ees.ac.uk/resource/being-egyptian.html"
+            target="_blank"
+            className={linkClass}
+          >
+            Being Egyptian
+          </Link>
+          {pt
+            ? " (Egypt Exploration Society)."
+            : " project (Egypt Exploration Society)."}
         </p>
         <p>
           {pt
-            ? "Seu projeto atual estuda o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses em Mauá (SP), a partir do cruzamento entre cultura material, história oral e arquivo."
-            : "His current project examines the domestic-industrial complex of the Kojima family, Japanese immigrant ceramists in Mauá (SP), through the intersection of material culture, oral history, and archival research."}
+            ? "Seu projeto atual estuda o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses em Mauá (SP), a partir do cruzamento entre cultura material, história oral e arquivo. Em paralelo, investiga como mídias visuais japonesas contemporâneas, como mangás e jogos, recebem a Antiguidade e a Idade Média por meio de saberes formados na Europa e os devolvem a um público global."
+            : "His current project examines the domestic-industrial complex of the Kojima family, Japanese immigrant ceramists in Mauá (SP), through the intersection of material culture, oral history, and archival research. In parallel, he investigates how contemporary Japanese visual media, such as manga and games, receive antiquity and the Middle Ages through knowledge formed in Europe and return them to a global audience."}
         </p>
       </div>
 
