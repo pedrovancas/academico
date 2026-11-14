@@ -28,28 +28,23 @@ const ProjetosPage = () => {
         </div>
 
         <div className="space-y-12">
-          {/* Seção 0: Biografia completa (a home traz só a versão curta) */}
+          {/* Seção 0: Biografia completa (mesmo texto da home) */}
           <article id="biografia" className="scroll-mt-8">
             <h2 className="text-xl font-bold mb-4 border-l-4 border-black dark:border-white pl-3">
               Biografia
             </h2>
             <div className="space-y-4 pl-4 text-zinc-700 dark:text-zinc-300">
               <p>
-                Mestrando em História Social pela{" "}
-                <a href="https://fflch.usp.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Universidade de São Paulo (PPGHS-FFLCH/USP)</a>
-                , vinculado ao{" "}
-                <a href="https://museudoipiranga.org.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Museu do Ipiranga</a>{" "}
-                e ao{" "}
-                <a href="https://sites.usp.br/gema/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades (GEMA/FAU-USP)</a>
-                , sob orientação da Profa. Dra. Vânia Carneiro de Carvalho. Desenvolve pesquisa sobre o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses estabelecidos em Mauá, SP, investigando as interseções entre espaço doméstico, produção cerâmica e processos de enraizamento da comunidade nikkei no estado de São Paulo, a partir de metodologias de análise de cultura material e história oral.
+                Pedro Vinícius de Castro — mestrando em História Social pela{" "}
+                <a href="https://fflch.usp.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Universidade de São Paulo (PPGHS-FFLCH/USP)</a>{" "}
+                e pesquisador associado ao{" "}
+                <a href="https://museudoipiranga.org.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Museu do Ipiranga (USP)</a>
+                . Pesquisa a história do Japão moderno pela cultura material, com atenção à circulação de pessoas, objetos e repertórios entre o Japão e outras partes do mundo. O interesse pelo espaço doméstico vem de sua formação em egiptologia, no trabalho com a iniciação científica e no projeto{" "}
+                <a href="https://www.ees.ac.uk/resource/being-egyptian.html" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Being Egyptian</a>{" "}
+                (Egypt Exploration Society).
               </p>
               <p>
-                Graduado em História pela mesma universidade, realizou pesquisa de Iniciação Científica sobre as representações do Egito Antigo na cultura pop japonesa (orient. Dra. Thaís Rocha da Silva), com apresentações em eventos nacionais e internacionais. Possui experiência em trabalho de acervo e catalogação de coleções museológicas no Museu do Ipiranga da USP (coleções Kojima e Zappi) e atuou como assistente editorial da Revista África (CEA-USP).
-              </p>
-              <p>
-                Integrou projetos de divulgação científica, com destaque para a edição audiovisual do projeto internacional Being Egyptian (Egypt Exploration Society), voltado ao estudo do espaço doméstico no Egito Antigo, e a produção do podcast Historiae. É membro do{" "}
-                <a href="https://nejap.paginas.ufsc.br/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">NEJAP (Núcleo de Estudos Japoneses/UFSC)</a>
-                {" "}e contribuiu para a organização do III Colóquio Internacional do Antigo Egito e Oriente Próximo (USP, 2023).
+                Seu projeto atual estuda o complexo doméstico-industrial da família Kojima, ceramistas imigrantes japoneses em Mauá (SP), a partir do cruzamento entre cultura material, história oral e arquivo. Em paralelo, investiga como mídias visuais japonesas contemporâneas, como mangás e jogos, recebem a Antiguidade e a Idade Média por meio de saberes formados na Europa e os devolvem a um público global.
               </p>
             </div>
           </article>
